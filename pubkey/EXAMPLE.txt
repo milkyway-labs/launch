@@ -1,0 +1,14 @@
+- address: celestia1xxx
+  name: staker
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_KEY}"}'
+  type: ledger
+
+- address: celestia1xxx
+  name: staker-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_KEY}"}'
+  type: ledger
+
+- address: celestia1xxx
+  name: rewards-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_KEY}"}'
+  type: ledger
