@@ -13,7 +13,7 @@ The multisig setup is a critical aspect of MilkyWay protocol. Our multisig accou
 MilkyWay protocol necessitates the use of three multisig accounts on Celestia:
 
 1. `Staker`
-    - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It serves its purpose of holding funds and grant full authorization to the `Staker Controller` multisig account. The full authorization means to grant privileges to grant and revoke to the `Staker Controller` multisig account on behalf of the `Staker`. It is suggested to be kept safe in cold storage.
+    - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It serves its purpose of holding funds and grant full authorization to the `Staker Controller` multisig account. The full authorization means to grant privileges to grant to the `Staker Controller` multisig account on behalf of the `Staker`. It is suggested to be kept safe in cold storage.
 
 2. `Staker Controller`
     - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It receives a full authorization from the `Staker` multisig account and performs actions on behalf of the `Staker` multisig account. This account will be used to grant a limited authorization to the `Grantee` account.
