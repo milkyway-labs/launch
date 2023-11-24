@@ -1,12 +1,3 @@
-# Table of Contents
-
-- [Overview](#overview)
-    - [What is Multisig account?](#what-is-multisig-account)
-    - [MilkyWay Multisig accounts](#milkyway-multisig-accounts)
-- [Instruction](#instruction)
-    - [Generating accounts](#generating-accounts)
-    - [Submitting your public keys](#submitting-your-public-keys)
-
 # Overview
 
 ## What is Multisig account?
@@ -109,4 +100,6 @@ In order to generate multisig keys, we need to collect public keys from all oper
 
 ## Remark
 
-As a core contributor to MilkyWay protocol, we extend our warmest welcome to you on the remarkable journey of the MilkyWay protocol. Your committment to being an operator is invaluable. We eagerly anticipate the collaborative efforts that lie ahead and are grateful for your participation in shaping the future of our protocol. Thank you for joining us, and we look forward to the journey ahead.
+As a core contributor to MilkyWay protocol, we extend our warmest welcome to you on the remarkable journey of the MilkyWay protocol. Your committment to being an operator is invaluable. We eagerly anticipate the collaborative efforts that lie ahead and are grateful for your participation in shaping the future of our protocol. 
+
+Thank you for joining us, and we look forward to the journey ahead.
