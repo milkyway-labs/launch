@@ -8,7 +8,7 @@ To sign with a multisig account, the transaction must be signed individually by 
 
 ## MilkyWay Multisig accounts
 
-The multisig setup is a critical aspect of MilkyWay protocol. Our multisig accounts on Celestia are a 5-of-7 configuration, meaning transactions need approval from at least five operators. This setup is crucial for ensuring a high-security standard. Prior to a launch, every operator needs to generate accounts and share their public keys. This repository will collect public keys and create multisig accounts that will be used within the MilkyWay protocol.
+The multisig setup is a critical aspect of MilkyWay protocol. Our multisig accounts on Celestia are a 5-of-7 configuration, meaning transactions need approval from at least five operators. This setup is crucial for ensuring a high-security standard. Prior to a launch, every operator needs to generate accounts and share their public keys. This repository will collect public keys and create multisig accounts that will be used within the MilkyWay protocol. However, it is important to note that **keys are NOT utilized in day-to-day operations**. They come into play only when the MilkyWay protocol undergoes changes, such as modifications to the operator set, and in the event of slashing incidents.
 
 MilkyWay protocol necessitates the use of three multisig accounts on Celestia:
 
