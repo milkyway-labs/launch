@@ -21,25 +21,23 @@ MilkyWay protocol necessitates the use of three multisig accounts on Celestia:
 3. `Rewards Collector`
     - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It is primarily responsible for receiving staking rewards on behalf of the `Staker` multisig account and is instrumental in enhancing accounting management.
 
-If you're not familiar with the need for three multisig accounts or the meaning of full and limited authorization, delve into our [technical architecture](https://github.com/milkyway-labs/architecture). It provides a comprehensive overview, shedding light on the design and structure of MilkyWay.
+If you're not familiar with the need for multisig accounts or the meaning of full and limited authorization, delve into our [technical architecture](https://github.com/milkyway-labs/architecture). It provides a comprehensive overview, shedding light on the design and structure of MilkyWay.
 
 # Instruction
 
 ## Generating accounts
 
-We suggest using a hardware wallet, Ledger device to store your keys because it greatly improves the security and it is supported in Celestia app binary. The Ledger device acts as an enclave of the seed and private keys, and the process of signing transaction takes place within it. 
+We suggest using a hardware wallet, Ledger device to store your keys because it greatly improves the security and it is supported in Celestia app binary. The Ledger device acts as an enclave of the seed and private keys, and the process of signing transaction takes place within it. At the core of a Ledger device there is a mnemonic seed phrase that is used to generate private keys. This phrase is generated when you initialize your Ledger. The mnemonic is compatible with Cosmos and can be used to seed new accounts. See [this Ledger Nano Support guide](https://hub.cosmos.network/main/resources/ledger.html) in case you don’t know how to install the Cosmos application on your ledger device.
 
-At the core of a Ledger device there is a mnemonic seed phrase that is used to generate private keys. This phrase is generated when you initialize your Ledger. The mnemonic is compatible with Cosmos and can be used to seed new accounts. See [this Ledger Nano Support guide](https://hub.cosmos.network/main/resources/ledger.html) in case you don’t know how to install the Cosmos application on your ledger device.
-
-If you plan to use other hardware devices or a software wallet, we assume that you are already familiar with the best practices for the management and security, ensuring they are neither lost nor compromised. Please exercise caution in securely managing the keys.
-
-Please feel free to engage in discussions with other operators for additional insights or contact us if you have any concerns. It's essential to prioritize the safe and secure storage of keys.
+If you plan to use other hardware devices or a software wallet, we assume that you are already familiar with the best practices for the management and security, ensuring they are neither lost nor compromised. Please exercise caution in securely managing the keys. Please feel free to engage in discussions with other operators for additional insights or contact us if you have any concerns. It's essential to prioritize the safe and secure storage of keys.
 
 Now, we need to generate the following accounts using a Ledger device. 
-
-[1] `Staker`
     
 ```bash
+#
+# Staker
+#
+
 # Add your Ledger key for `Staker`
 celestia-appd keys add staker --ledger --index 0
 
@@ -51,11 +49,11 @@ celestia-appd keys show staker -d
   name: staker
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_PUBLIC_KEY}"}'
   type: ledger
-```
 
-[2] `Staker Controller`
+#
+# Staker Controller
+#
 
-```bash
 # Add your Ledger key for `Staker Controller`
 celestia-appd keys add staker-controller --ledger --index 1
 
@@ -67,12 +65,12 @@ celestia-appd keys show staker-controller -d
   name: staker-collector
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_PUBLIC_KEY}"}'
   type: ledger
-```
 
-[3] `Rewards Collector`
+#
+# Rewards Collector
+#
 
-```bash
-# Add your Ledger key for `Rewards Colelctor`
+# Add your Ledger key for `Rewards Collector`
 celestia-appd keys add rewards-collector --ledger --index 2
 
 # Confirm your address
@@ -102,4 +100,4 @@ In order to generate multisig keys, we need to collect public keys from all oper
 
 As a core contributor to MilkyWay protocol, we extend our warmest welcome to you on the remarkable journey of the MilkyWay protocol. Your committment to being an operator is invaluable. We eagerly anticipate the collaborative efforts that lie ahead and are grateful for your participation in shaping the future of our protocol. 
 
-Thank you for joining us, and we look forward to the journey ahead.
+Thank you for joining us, and we look forward to the journey ahead!
