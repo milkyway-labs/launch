@@ -2,6 +2,13 @@
 
 This repository contains the essential information required for the launch of MilkyWay. 
 
+## Steps
+
+1. Follow the instruction in [pubkey/README.md](pubkey/README.md) to generate accounts and submit your public keys.
+
+2. To be announced.
+
+
 ## MilkyWay Community
 
 Community channels actively being moderated are here:
