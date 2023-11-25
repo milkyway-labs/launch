@@ -31,7 +31,7 @@ We suggest using a hardware wallet, Ledger device to store your keys because it 
 
 If you plan to use other hardware devices or a software wallet, we assume that you are already familiar with the best practices for the management and security, ensuring they are neither lost nor compromised. Please exercise caution in securely managing the keys. Please feel free to engage in discussions with other operators for additional insights or contact us if you have any concerns. It's essential to prioritize the safe and secure storage of keys.
 
-Now, we need to generate the following accounts using a Ledger device. First, you need to build `celestia-appd` either from the source or download from [the releases](https://github.com/celestiaorg/celestia-app/releases) page. At the time of writing, [v1.4.0](https://github.com/celestiaorg/celestia-app/releases/tag/v1.4.0) is the latest version for Mainnet.
+Now, we need to generate the following accounts using a Ledger device. First, you need to build `celestia-appd` either from the source or download from the [releases](https://github.com/celestiaorg/celestia-app/releases) page. At the time of writing, [v1.4.0](https://github.com/celestiaorg/celestia-app/releases/tag/v1.4.0) is the latest version for Mainnet.
     
 ```bash
 #
