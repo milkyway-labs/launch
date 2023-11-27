@@ -29,7 +29,7 @@ If you're not familiar with the need for multisig accounts or the meaning of ful
 
 We suggest using a hardware wallet, Ledger device to store your keys because it greatly improves the security and it is supported in Celestia app binary. If you plan to use other hardware devices or a software wallet, we assume that you are already familiar with the best practices for the management and security, ensuring they are neither lost nor compromised. Please exercise caution in securely managing the keys and feel free to engage in discussions with other operators for additional insights.
 
-Now, we need to generate the following accounts using a Ledger device. First, you need to build `celestia-appd` either from the source by following their [README.md](https://github.com/celestiaorg/celestia-app#install) or download from the [releases](https://github.com/celestiaorg/celestia-app/releases) page. At the time of writing, [v1.4.0](https://github.com/celestiaorg/celestia-app/releases/tag/v1.4.0) is the latest version for Mainnet.
+In this guide, we will generate accounts using a Ledger device. First, you need to build `celestia-appd` either from the source by following their [README.md](https://github.com/celestiaorg/celestia-app#install) or download from the [releases](https://github.com/celestiaorg/celestia-app/releases) page. At the time of writing, [v1.4.0](https://github.com/celestiaorg/celestia-app/releases/tag/v1.4.0) is the latest version for Mainnet.
     
 ```bash
 #
@@ -82,8 +82,6 @@ celestia-appd keys show rewards-collector -d
 ```
 
 ## Submitting your public keys
-
-In order to generate multisig keys, we need to collect public keys from all operators.
 
 1. Fork this repository
 
