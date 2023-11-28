@@ -1,0 +1,14 @@
+- address: celestia1ucrymm05wmlf9vhc2t94uudg9yk08qfja6cf40
+  name: staker
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Ai4ZY5/BKI+WVowB54zbw5kyrTbGzHDF0fizI1mT5ALQ"}'
+  type: ledger
+
+- address: celestia1cychw2yh2dyezdplyk2e5xh6vv88nnuustf5j4
+  name: staker-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A5rIlZtyvz1YgkTgtzZeW0Znw3K1VABGYR9n9YB6ULok"}'
+  type: ledger
+
+- address: celestia14rd8w84hgfap9qnem9g880xqmgmnj3awe3mxu2
+  name: rewards-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A4FiJus8oaRUX1vXyF9Qy040EL5wibtBYV0OwU+5mpw5"}'
+  type: ledger
