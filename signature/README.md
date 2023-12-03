@@ -12,7 +12,6 @@ The following multisig accounts are generated from Step 1 process.
 | `Staker Controller` |`celestia16g5l6n9kg6879z695g6qjh70qv6wzqg640z9pn` |
 | `Rewards Collector` |`celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2` |
 | `Grantee`           |`celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd` |
-|||
 
 ## Signing signatures
 
@@ -35,7 +34,7 @@ The `unsigned_tx_signature1.json` file includes the following grants:
 - [SetWithdrawAddress](https://github.com/cosmos/cosmos-sdk/blob/v0.46.14/proto/cosmos/distribution/v1beta1/tx.proto#L16)
     - This grant is needed for the `Staker Controller` to grant change of the staking rewards withdrawal address from the `Staker` multisig to the `Grantee` account.
 
-Now, connect your ledger device to your computer and sign it.
+Now, connect your ledger to your device and sign it.
 
 ```bash
 # Import your `Staker` wallet
@@ -58,7 +57,6 @@ celestia-appd tx sign unsigned_tx_signature1.json \
 --output-document=signature1_{OPERATOR_NAME}.json
 ```
 
-
 ### Signature 2
 
 This transaction grants a limited authorization to the `Grantee` account on behalf of the `Staker` using the `Staker Controller`.
@@ -80,7 +78,7 @@ The `unsigned_tx_signature2.json` file includes the following grants and message
 - [MsgGrantAllowance](https://github.com/cosmos/cosmos-sdk/blob/v0.46.14/proto/cosmos/feegrant/v1beta1/tx.proto#L16)
     - This message is needed for the `Grantee` to use transaction fees from the `Staker` multisig account.
 
-Now, connect your ledger device to your device and sign it.
+Now, connect your ledger to your device and sign it.
 
 ```bash
 # Import your `Staker Controller` wallet
@@ -112,6 +110,8 @@ The `unsigned_tx_signature3.json` file includes the following grants:
 
 - [MsgTransfer](https://github.com/cosmos/ibc-go/blob/v6.2.0/proto/ibc/applications/transfer/v1/tx.proto#L14)
     - This grant is needed for the `Grantee` to IBC transfer staking rewards. It is important to note that the grant is setup with the specific source port, channel and an allow list of the MilkyWay’s staking contract address. With this constraint, the grantee is permitted to IBC transfer to the contract address.
+
+Now, connect your ledger to your device and sign it.
 
 ```bash
 # Import your Rewards Collector wallet
