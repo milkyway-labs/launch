@@ -74,4 +74,3 @@ celestia-appd keys add rc7 --pubkey $PUBKEY_REWARDS_COLLECTOR_KEPLR
 celestia-appd keys add \
 --multisig rc1,rc2,rc3,rc4,rc5,rc6,rc7 \
 --multisig-threshold 5 rewards-collector
-
