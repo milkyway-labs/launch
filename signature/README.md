@@ -13,6 +13,11 @@ The following multisig accounts are generated from Step 1 process.
 | `Rewards Collector` |`celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2` |
 | `Grantee`           |`celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd` |
 
+Run the following script to add the generated multisig accounts:
+```bash
+sh generate_multisigs.sh
+```
+
 ## Signing signatures
 
 For your convenience, the following JSON files are prepared.
