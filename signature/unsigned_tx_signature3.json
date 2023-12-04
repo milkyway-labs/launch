@@ -1,0 +1,45 @@
+{
+    "body": {
+      "messages": [
+        {
+          "@type": "/cosmos.authz.v1beta1.MsgGrant",
+          "granter": "celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2",
+          "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+          "grant": {
+            "authorization": {
+              "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+              "allocations": [
+                {
+                  "source_port": "transfer",
+                  "source_channel": "channel-2",
+                  "spend_limit": [
+                    {
+                      "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                      "denom": "utia"
+                    }
+                  ],
+                  "allow_list": ["osmo1270apph0jfj0xsh6lqq9y5sakcdyqe6vnu48446kcw00wuzx2pvqf52wq7"]
+                }
+              ]
+            },
+            "expiration": null
+          }
+        }
+      ],
+      "memo": "",
+      "timeout_height": "0",
+      "extension_options": [],
+      "non_critical_extension_options": []
+    },
+    "auth_info": {
+      "signer_infos": [],
+      "fee": {
+        "amount": [{ "denom": "utia", "amount": "30000" }],
+        "gas_limit": "300000",
+        "payer": "",
+        "granter": ""
+      },
+      "tip": null
+    },
+    "signatures": []
+  }
