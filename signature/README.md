@@ -50,7 +50,7 @@ STAKER_ADDR="celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature1.json \
 --chain-id celestia \
---from <NAME> \
+--from <STAKER> \
 --multisig $STAKER_ADDR \
 --ledger \
 --node $NODE \
@@ -95,7 +95,7 @@ CONTROLLER_ADDR="celestia16g5l6n9kg6879z695g6qjh70qv6wzqg640z9pn"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature2.json \
 --chain-id celestia \
---from <NAME> \
+--from <STAKER CONTROLLER> \
 --multisig $CONTROLLER_ADDR \
 --ledger \
 --node $NODE \
@@ -128,7 +128,7 @@ REWARDS_COLLECTOR_ADDR="celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature3.json \
 --chain-id celestia \
---from <NAME> \
+--from <REWARDS COLLECTOR> \
 --multisig $REWARDS_COLLECTOR_ADDR \
 --ledger \
 --node $NODE \
