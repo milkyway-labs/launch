@@ -14,6 +14,7 @@ The following multisig accounts are generated from Step 1 process.
 | `Grantee`           |`celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd` |
 
 Run the following script to add the generated multisig accounts:
+
 ```bash
 sh generate_multisigs.sh
 ```
@@ -44,7 +45,7 @@ Now, connect your ledger to your device and sign it.
 ```bash
 # Import your `Staker` wallet
 # Change index to the one that you have used when setting the account
-celestia-appd keys add <STAKER> --ledger --index 0
+celestia-appd keys add op-staker --ledger --index 0
 
 # We use the following public RPC endpoint to get account number.
 # In case it is not responsive, use any alternatives in https://docs.celestia.org/nodes/mainnet
@@ -55,10 +56,11 @@ STAKER_ADDR="celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature1.json \
 --chain-id celestia \
---from <STAKER> \
+--from op-staker \
 --multisig $STAKER_ADDR \
 --ledger \
 --node $NODE \
+--sign-mode amino-json \
 --output-document=signature1_{OPERATOR_NAME}.json
 ```
 
@@ -88,7 +90,7 @@ Now, connect your ledger to your device and sign it.
 ```bash
 # Import your `Staker Controller` wallet
 # Change index to the one that you have used when setting the account
-celestia-appd keys add <STAKER CONTROLLER> --ledger --index 1
+celestia-appd keys add op-staker-controller --ledger --index 1
 
 # We use the following public RPC endpoint to get account number.
 # In case it is not responsive, use any alternatives in the following link
@@ -100,7 +102,7 @@ CONTROLLER_ADDR="celestia16g5l6n9kg6879z695g6qjh70qv6wzqg640z9pn"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature2.json \
 --chain-id celestia \
---from <STAKER CONTROLLER> \
+--from op-staker-controller \
 --multisig $CONTROLLER_ADDR \
 --ledger \
 --node $NODE \
@@ -121,7 +123,7 @@ Now, connect your ledger to your device and sign it.
 ```bash
 # Import your Rewards Collector wallet
 # Change index to the one that you have used when setting the account
-celestia-appd keys add <REWARDS COLLECTOR> --ledger --index 2
+celestia-appd keys add op-rewards-collector --ledger --index 2
 
 # We use the following public RPC endpoint to get account number.
 # In case it is not responsive, use any alternatives in the following link
@@ -133,7 +135,7 @@ REWARDS_COLLECTOR_ADDR="celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2"
 # Make sure you change the `NAME` and `OPERATOR_NAME`
 celestia-appd tx sign unsigned_tx_signature3.json \
 --chain-id celestia \
---from <REWARDS COLLECTOR> \
+--from op-rewards-collector \
 --multisig $REWARDS_COLLECTOR_ADDR \
 --ledger \
 --node $NODE \

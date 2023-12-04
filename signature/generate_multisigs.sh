@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 #
 # Staker
@@ -12,18 +13,26 @@ PUBKEY_STAKER_DSRV='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AroULbdtZQ
 PUBKEY_STAKER_EVERSTAKE='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A7Yi5eeppeM75uwpiQsie8dY+JXUWQWfO0GUJ1x/B0Rs"}'
 PUBKEY_STAKER_KEPLR='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A7NH/e7j/Tek4YC2Ad5Y6KBaNsLe4PMt14V2BypaRc7f"}'
 
-celestia-appd keys add s1 --pubkey $PUBKEY_STAKER_01NODE
-celestia-appd keys add s2 --pubkey $PUBKEY_STAKER_ALLNODES
-celestia-appd keys add s3 --pubkey $PUBKEY_STAKER_CHORUSONE
-celestia-appd keys add s4 --pubkey $PUBKEY_STAKER_COSMOSTATION
-celestia-appd keys add s5 --pubkey $PUBKEY_STAKER_DSRV
-celestia-appd keys add s6 --pubkey $PUBKEY_STAKER_EVERSTAKE
-celestia-appd keys add s7 --pubkey $PUBKEY_STAKER_KEPLR
+celestia-appd keys add mw-s1 --pubkey $PUBKEY_STAKER_01NODE
+celestia-appd keys add mw-s2 --pubkey $PUBKEY_STAKER_ALLNODES
+celestia-appd keys add mw-s3 --pubkey $PUBKEY_STAKER_CHORUSONE
+celestia-appd keys add mw-s4 --pubkey $PUBKEY_STAKER_COSMOSTATION
+celestia-appd keys add mw-s5 --pubkey $PUBKEY_STAKER_DSRV
+celestia-appd keys add mw-s6 --pubkey $PUBKEY_STAKER_EVERSTAKE
+celestia-appd keys add mw-s7 --pubkey $PUBKEY_STAKER_KEPLR
 
 # Expected: celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt
 celestia-appd keys add \
---multisig s1,s2,s3,s4,s5,s6,s7 \
+--multisig mw-s1,mw-s2,mw-s3,mw-s4,mw-s5,mw-s6,mw-s7 \
 --multisig-threshold 5 staker
+
+celestia-appd keys delete mw-s1 -y
+celestia-appd keys delete mw-s2 -y
+celestia-appd keys delete mw-s3 -y
+celestia-appd keys delete mw-s4 -y
+celestia-appd keys delete mw-s5 -y
+celestia-appd keys delete mw-s6 -y
+celestia-appd keys delete mw-s7 -y
 
 #
 # Staker Controller
@@ -37,18 +46,26 @@ PUBKEY_STAKER_CONTROLLER_DSRV='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":
 PUBKEY_STAKER_CONTROLLER_EVERSTAKE='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AunIfl+OnfdoAiT+OGFQg2Pf8bDAjxFga50aqr3cHWQS"}'
 PUBKEY_STAKER_CONTROLLER_KEPLR='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A8w0vxoHFJBqFuLQrSz2jZnuQIfi4aN9Q4Bfi7vg2ihY"}'
 
-celestia-appd keys add sc1 --pubkey $PUBKEY_STAKER_CONTROLLER_01NODE
-celestia-appd keys add sc2 --pubkey $PUBKEY_STAKER_CONTROLLER_ALLNODES
-celestia-appd keys add sc3 --pubkey $PUBKEY_STAKER_CONTROLLER_CHORUSONE
-celestia-appd keys add sc4 --pubkey $PUBKEY_STAKER_CONTROLLER_COSMOSTATION
-celestia-appd keys add sc5 --pubkey $PUBKEY_STAKER_CONTROLLER_DSRV
-celestia-appd keys add sc6 --pubkey $PUBKEY_STAKER_CONTROLLER_EVERSTAKE
-celestia-appd keys add sc7 --pubkey $PUBKEY_STAKER_CONTROLLER_KEPLR
+celestia-appd keys add mw-sc1 --pubkey $PUBKEY_STAKER_CONTROLLER_01NODE
+celestia-appd keys add mw-sc2 --pubkey $PUBKEY_STAKER_CONTROLLER_ALLNODES
+celestia-appd keys add mw-sc3 --pubkey $PUBKEY_STAKER_CONTROLLER_CHORUSONE
+celestia-appd keys add mw-sc4 --pubkey $PUBKEY_STAKER_CONTROLLER_COSMOSTATION
+celestia-appd keys add mw-sc5 --pubkey $PUBKEY_STAKER_CONTROLLER_DSRV
+celestia-appd keys add mw-sc6 --pubkey $PUBKEY_STAKER_CONTROLLER_EVERSTAKE
+celestia-appd keys add mw-sc7 --pubkey $PUBKEY_STAKER_CONTROLLER_KEPLR
 
 # Expected: celestia16g5l6n9kg6879z695g6qjh70qv6wzqg640z9pn
 celestia-appd keys add \
---multisig sc1,sc2,sc3,sc4,sc5,sc6,sc7 \
+--multisig mw-sc1,mw-sc2,mw-sc3,mw-sc4,mw-sc5,mw-sc6,mw-sc7 \
 --multisig-threshold 5 staker-controller
+
+celestia-appd keys delete mw-sc1 -y
+celestia-appd keys delete mw-sc2 -y
+celestia-appd keys delete mw-sc3 -y
+celestia-appd keys delete mw-sc4 -y
+celestia-appd keys delete mw-sc5 -y
+celestia-appd keys delete mw-sc6 -y
+celestia-appd keys delete mw-sc7 -y
 
 #
 # Rewards Collector
@@ -62,15 +79,23 @@ PUBKEY_REWARDS_COLLECTOR_DSRV='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":
 PUBKEY_REWARDS_COLLECTOR_EVERSTAKE='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A6wj4MRwLAZAkJWQ82OqTKeSI/P91DxWRAN8PnFMbL+p"}'
 PUBKEY_REWARDS_COLLECTOR_KEPLR='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A/zl9DME57oiyX8ltf1dYi9+4ZswhKeys7dh6cDNtop6"}'
 
-celestia-appd keys add rc1 --pubkey $PUBKEY_REWARDS_COLLECTOR_01NODE
-celestia-appd keys add rc2 --pubkey $PUBKEY_REWARDS_COLLECTOR_ALLNODES
-celestia-appd keys add rc3 --pubkey $PUBKEY_REWARDS_COLLECTOR_CHORUSONE
-celestia-appd keys add rc4 --pubkey $PUBKEY_REWARDS_COLLECTOR_COSMOSTATION
-celestia-appd keys add rc5 --pubkey $PUBKEY_REWARDS_COLLECTOR_DSRV
-celestia-appd keys add rc6 --pubkey $PUBKEY_REWARDS_COLLECTOR_EVERSTAKE
-celestia-appd keys add rc7 --pubkey $PUBKEY_REWARDS_COLLECTOR_KEPLR
+celestia-appd keys add mw-rc1 --pubkey $PUBKEY_REWARDS_COLLECTOR_01NODE
+celestia-appd keys add mw-rc2 --pubkey $PUBKEY_REWARDS_COLLECTOR_ALLNODES
+celestia-appd keys add mw-rc3 --pubkey $PUBKEY_REWARDS_COLLECTOR_CHORUSONE
+celestia-appd keys add mw-rc4 --pubkey $PUBKEY_REWARDS_COLLECTOR_COSMOSTATION
+celestia-appd keys add mw-rc5 --pubkey $PUBKEY_REWARDS_COLLECTOR_DSRV
+celestia-appd keys add mw-rc6 --pubkey $PUBKEY_REWARDS_COLLECTOR_EVERSTAKE
+celestia-appd keys add mw-rc7 --pubkey $PUBKEY_REWARDS_COLLECTOR_KEPLR
 
 # Expected: celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2
 celestia-appd keys add \
---multisig rc1,rc2,rc3,rc4,rc5,rc6,rc7 \
+--multisig mw-rc1,mw-rc2,mw-rc3,mw-rc4,mw-rc5,mw-rc6,mw-rc7 \
 --multisig-threshold 5 rewards-collector
+
+celestia-appd keys delete mw-rc1 -y
+celestia-appd keys delete mw-rc2 -y
+celestia-appd keys delete mw-rc3 -y
+celestia-appd keys delete mw-rc4 -y
+celestia-appd keys delete mw-rc5 -y
+celestia-appd keys delete mw-rc6 -y
+celestia-appd keys delete mw-rc7 -y
