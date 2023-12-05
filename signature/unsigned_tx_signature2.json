@@ -1,0 +1,171 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgExec",
+        "grantee": "celestia16g5l6n9kg6879z695g6qjh70qv6wzqg640z9pn",
+        "msgs": [
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.staking.v1beta1.StakeAuthorization",
+                "max_tokens": null,
+                "allow_list": {
+                  "address": [
+                    "celestiavaloper1murrqgqahxevedty0nzqrn5hj434fvffxufxcl",
+                    "celestiavaloper1rcm7tth05klgkqpucdhm5hexnk49dfda3l3hak",
+                    "celestiavaloper15urq2dtp9qce4fyc85m6upwm9xul3049gwdz0x",
+                    "celestiavaloper1uqj5ul7jtpskk9ste9mfv6jvh0y3w34vtpz3gw",
+                    "celestiavaloper1vje2he3pcq3w5udyvla7zm9qd5yes6hzffsjxj",
+                    "celestiavaloper1eualhqh07w7p45g45hvrjagkcxsfnflzdw5jzg",
+                    "celestiavaloper1uwmf03ke52vld2sa9khs0nslpgzwsm5xs5e4pn",
+                    "celestiavaloper1e2p4u5vqwgum7pm9vhp0yjvl58gvhfc6yfatw4",
+                    "celestiavaloper1ftmw4wh8dq2ljw0xq3xgg00dl7l20se3lrml7q",
+                    "celestiavaloper138jl42zlxue4wpvnugcdqhxjmyd2vpt6qhs5ls",
+                    "celestiavaloper1xqc7w3pe38kg4tswjt7mnvks7gy4p38vtsuycj",
+                    "celestiavaloper1ac4mnwg79gyvd0x5trl2fgjv07lgfas02jf378"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_DELEGATE"
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.staking.v1beta1.StakeAuthorization",
+                "max_tokens": null,
+                "allow_list": {
+                  "address": [
+                    "celestiavaloper1murrqgqahxevedty0nzqrn5hj434fvffxufxcl",
+                    "celestiavaloper1rcm7tth05klgkqpucdhm5hexnk49dfda3l3hak",
+                    "celestiavaloper15urq2dtp9qce4fyc85m6upwm9xul3049gwdz0x",
+                    "celestiavaloper1uqj5ul7jtpskk9ste9mfv6jvh0y3w34vtpz3gw",
+                    "celestiavaloper1vje2he3pcq3w5udyvla7zm9qd5yes6hzffsjxj",
+                    "celestiavaloper1eualhqh07w7p45g45hvrjagkcxsfnflzdw5jzg",
+                    "celestiavaloper1uwmf03ke52vld2sa9khs0nslpgzwsm5xs5e4pn",
+                    "celestiavaloper1e2p4u5vqwgum7pm9vhp0yjvl58gvhfc6yfatw4",
+                    "celestiavaloper1ftmw4wh8dq2ljw0xq3xgg00dl7l20se3lrml7q",
+                    "celestiavaloper138jl42zlxue4wpvnugcdqhxjmyd2vpt6qhs5ls",
+                    "celestiavaloper1xqc7w3pe38kg4tswjt7mnvks7gy4p38vtsuycj",
+                    "celestiavaloper1ac4mnwg79gyvd0x5trl2fgjv07lgfas02jf378"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_UNDELEGATE"
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.staking.v1beta1.StakeAuthorization",
+                "max_tokens": null,
+                "allow_list": {
+                  "address": [
+                    "celestiavaloper1murrqgqahxevedty0nzqrn5hj434fvffxufxcl",
+                    "celestiavaloper1rcm7tth05klgkqpucdhm5hexnk49dfda3l3hak",
+                    "celestiavaloper15urq2dtp9qce4fyc85m6upwm9xul3049gwdz0x",
+                    "celestiavaloper1uqj5ul7jtpskk9ste9mfv6jvh0y3w34vtpz3gw",
+                    "celestiavaloper1vje2he3pcq3w5udyvla7zm9qd5yes6hzffsjxj",
+                    "celestiavaloper1eualhqh07w7p45g45hvrjagkcxsfnflzdw5jzg",
+                    "celestiavaloper1uwmf03ke52vld2sa9khs0nslpgzwsm5xs5e4pn",
+                    "celestiavaloper1e2p4u5vqwgum7pm9vhp0yjvl58gvhfc6yfatw4",
+                    "celestiavaloper1ftmw4wh8dq2ljw0xq3xgg00dl7l20se3lrml7q",
+                    "celestiavaloper138jl42zlxue4wpvnugcdqhxjmyd2vpt6qhs5ls",
+                    "celestiavaloper1xqc7w3pe38kg4tswjt7mnvks7gy4p38vtsuycj",
+                    "celestiavaloper1ac4mnwg79gyvd0x5trl2fgjv07lgfas02jf378"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_REDELEGATE"
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+                "msg": "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "grant": {
+              "authorization": {
+                "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+                "allocations": [
+                  {
+                    "source_port": "transfer",
+                    "source_channel": "channel-2",
+                    "spend_limit": [
+                      {
+                        "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                        "denom": "utia"
+                      }
+                    ],
+                    "allow_list": [
+                      "osmo1f5vfcph2dvfeqcqkhetwv75fda69z7e5c2dldm3kvgj23crkv6wqcn47a0"
+                    ]
+                  }
+                ]
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.feegrant.v1beta1.MsgGrantAllowance",
+            "granter": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "grantee": "celestia1fl85qh9pw4ju48zy2eqr8h0h6d8hwgpq5880wd",
+            "allowance": {
+              "@type": "/cosmos.feegrant.v1beta1.AllowedMsgAllowance",
+              "allowance": {
+                "@type": "/cosmos.feegrant.v1beta1.BasicAllowance",
+                "spend_limit": [],
+                "expiration": null
+              },
+              "allowed_messages": ["/cosmos.staking.v1beta1.MsgDelegate"]
+            }
+          },
+          {
+            "@type": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress",
+            "delegator_address": "celestia1vxzram63f7mvseufc83fs0gnt5383lvrle3qpt",
+            "withdraw_address": "celestia1vr00egrck8a0dax68fgglrm3n8v4yz9wjj7cj2"
+          }
+        ]
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [{ "denom": "utia", "amount": "50000" }],
+      "gas_limit": "500000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}

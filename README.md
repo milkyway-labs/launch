@@ -4,9 +4,14 @@ This repository contains the essential information required for the launch of Mi
 
 ## Steps
 
-1. Follow the instruction in [pubkey/README.md](pubkey/README.md) to generate accounts and submit your public keys.
+### Step 1
 
-2. To be announced.
+- Follow the instruction in [pubkey](pubkey/README.md) to generate 
+accounts and submit your public keys.
+
+### Step 2
+
+- Follow the instruction in [signature](signature/README.md) to sign transactions.
 
 
 ## MilkyWay Community
