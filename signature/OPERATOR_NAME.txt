@@ -1,8 +1,0 @@
-Signature 1
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A0zNC2KmQ2Y2crm2hmfJokblrBVgEtAMscO9ED0xnOG0"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"EXAMPLE+IyQ1+045iiOduPAB8Yd6eEFYoK2RzMdjZHVEMWleYg4NF/TmtmVuHgoleuOFeDlwUvJIFVVxgn0Ke3w=="}},"sequence":"0"}]}
-
-Signature 2
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A0zNC2KmQ2Y2crm2hmfJokblrBVgEtAMscO9ED0xnOG0"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"EXAMPLE+IyQ1+045iiOduPAB8Yd6eEFYoK2RzMdjZHVEMWleYg4NF/TmtmVuHgoleuOFeDlwUvJIFVVxgn0Ke3w=="}},"sequence":"0"}]}
-
-Signature 3
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A0zNC2KmQ2Y2crm2hmfJokblrBVgEtAMscO9ED0xnOG0"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"EXAMPLE+IyQ1+045iiOduPAB8Yd6eEFYoK2RzMdjZHVEMWleYg4NF/TmtmVuHgoleuOFeDlwUvJIFVVxgn0Ke3w=="}},"sequence":"0"}]}
