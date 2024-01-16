@@ -1,10 +1,8 @@
-<p>&nbsp;</p>
-<p align="center">
-    <a href="https://www.milkyway.zone/"><img src="banner.png" width=620>
-    </a>
-</p>
-
 # MilkyWay Launch 🥛
+
+![image](./banner.png)
+
+## Overview
 
 This repository contains the essential information required for the launch of MilkyWay. 
 
