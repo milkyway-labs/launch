@@ -1,0 +1,14 @@
+- address: init1...
+  name: staker
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_PUBLIC_KEY}"}'
+  type: ledger
+
+- address: init1...
+  name: staker-controller
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_PUBLIC_KEY}"}'
+  type: ledger
+
+- address: init1...
+  name: rewards-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"{YOUR_PUBLIC_KEY}"}'
+  type: ledger
