@@ -4,19 +4,12 @@
 
 ## Overview
 
-This repository contains the essential information required for the launch of MilkyWay. 
+This repository contains the essential information required for the launch of various MilkyWay LSTs(Liquid Staking Tokens).
 
-## Steps
+## Available Liquid Staking Tokens
 
-### Step 1
-
-- Follow the instruction in [pubkey](pubkey/README.md) to generate 
-accounts and submit your public keys.
-
-### Step 2
-
-- Follow the instruction in [signature](signature/README.md) to sign transactions.
-
+- [milkTIA (Celestia)](./milktia)
+- [milkINIT (Initia)](./milkinit)
 
 ## MilkyWay Community
 
