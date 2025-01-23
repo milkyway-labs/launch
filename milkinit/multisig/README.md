@@ -10,20 +10,20 @@ To sign with a multisig account, the transaction must be signed individually by 
 
 ### MilkyWay Multisig accounts
 
-The multisig setup is a critical aspect of MilkyWay protocol. Our multisig accounts on Initia are a [k]-of-[n] configuration, meaning transactions need approval from at least [k] operators. This setup is crucial for ensuring a high-security standard. Prior to a launch, every operator needs to generate accounts and share their public keys. This repository will collect public keys and create multisig accounts that will be used within the MilkyWay protocol. However, it is important to note that **keys are NOT utilized in day-to-day operations**. They come into play only when the MilkyWay protocol undergoes changes, such as modifications to the operator set, and in the event of slashing incidents.
+The multisig setup is a critical aspect of MilkyWay protocol. Our multisig accounts on Initia are a 5-of-7 configuration, meaning transactions need approval from at least 5 operators. This setup is crucial for ensuring a high-security standard. Prior to a launch, every operator needs to generate accounts and share their public keys. This repository will collect public keys and create multisig accounts that will be used within the MilkyWay protocol. However, it is important to note that **keys are NOT utilized in day-to-day operations**. They come into play only when the MilkyWay protocol undergoes changes, such as modifications to the operator set, and in the event of slashing incidents.
 
 MilkyWay protocol necessitates the use of three multisig accounts on Initia:
 
 1. `Staker`
 
-   - This account is configured as a [k]-of-[n] multisig, utilizing the public keys of the operators. It serves its purpose of holding funds and grant full authorization to the `Staker Controller` multisig account. The full authorization means to grant privileges to grant to the `Staker Controller` multisig account on behalf of the `Staker`. It is suggested to be kept safe in cold storage.
+   - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It serves its purpose of holding funds and grant full authorization to the `Staker Controller` multisig account. The full authorization means to grant privileges to grant to the `Staker Controller` multisig account on behalf of the `Staker`. It is suggested to be kept safe in cold storage.
 
 2. `Staker Controller`
 
-   - This account is configured as a [k]-of-[n] multisig, utilizing the public keys of the operators. It receives a full authorization from the `Staker` multisig account and performs actions on behalf of the `Staker` multisig account. This account will be used to grant a limited authorization to the `Grantee` account.
+   - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It receives a full authorization from the `Staker` multisig account and performs actions on behalf of the `Staker` multisig account. This account will be used to grant a limited authorization to the `Grantee` account.
 
 3. `Rewards Collector`
-   - This account is configured as a [k]-of-[n] multisig, utilizing the public keys of the operators. It is primarily responsible for receiving staking rewards on behalf of the `Staker` multisig account and is instrumental in enhancing accounting management.
+   - This account is configured as a 5-of-7 multisig, utilizing the public keys of the operators. It is primarily responsible for receiving staking rewards on behalf of the `Staker` multisig account and is instrumental in enhancing accounting management.
 
 If you're not familiar with the need for multisig accounts or the meaning of full and limited authorization, delve into our [technical architecture](https://github.com/milkyway-labs/architecture). It provides a comprehensive overview, shedding light on the design and structure of MilkyWay.
 
