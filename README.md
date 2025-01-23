@@ -16,6 +16,7 @@ This repository contains the essential information required for the launch of va
 Community channels actively being moderated are here:
 
 - [Website](https://www.milkyway.zone/)
+- [Documentation](https://docs.milkyway.zone/)
 - [Twitter](https://twitter.com/milky_way_zone)
 - [Medium Blog](https://medium.com/milkyway-zone)
 - [Discord](https://discord.com/invite/4ywmNE3tqq)
