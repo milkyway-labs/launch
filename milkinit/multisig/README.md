@@ -33,7 +33,10 @@ If you're not familiar with the need for multisig accounts or the meaning of ful
 
 We suggest using a hardware wallet, Ledger device to store your keys because it greatly improves the security and it is supported in `initiad` binary. If you plan to use other hardware devices or a software wallet, we assume that you are already familiar with the best practices for the management and security, ensuring they are neither lost nor compromised. Please exercise caution in securely managing the keys and feel free to engage in discussions with other operators for additional insights.
 
-In this guide, we will generate accounts using a Ledger device. First, you need to build `initiad` either from the source by following their [documentation](https://docs.initia.xyz/build-on-initia/initiad) or download from the [releases](https://github.com/initia-labs/initia/releases) page. At the time of writing, [x](y) is the latest version for Mainnet.
+In this guide, we will generate accounts using a Ledger device.
+First, you need to build `initiad` either from the source by following their [documentation](https://docs.initia.xyz/build-on-initia/initiad) or download from the [releases](https://github.com/initia-labs/initia/releases) page.
+Usually the binary's version doesn't affect how keys are generated, so feel free to pick up any version.
+At the time of writing, [v0.6.4](https://github.com/initia-labs/initia/releases/tag/v0.6.4) is the latest version.
 
 ```bash
 #
