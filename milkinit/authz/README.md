@@ -8,12 +8,12 @@ In this step, operators are required to sign signatures to setup the preparation
 
 The following multisig accounts are generated from [the previous process](../multisig/README.md).
 
-| Name                | Address    |
-| ------------------- | ---------- |
-| `Staker`            | `init1...` |
-| `Staker Controller` | `init1...` |
-| `Rewards Collector` | `init1...` |
-| `Grantee`           | `init1...` |
+| Name                | Address                                       |
+| ------------------- | --------------------------------------------- |
+| `Staker`            | `init18h6va7k4w28n79mmuuqzv0rqfgquhzsuh9qrnk` |
+| `Staker Controller` | `init15y5jaadsrg6cr9fjlgcn3r56dexxzgkk2z6ttr` |
+| `Rewards Collector` | `init1ehn8y3fhu6e42vuj5az7mzvtc3gem9v6uswr03` |
+| `Grantee`           | `init1...`                                    |
 
 ### Signing signatures
 

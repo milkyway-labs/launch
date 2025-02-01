@@ -32,6 +32,7 @@ for p in Path("./pubkeys").glob("*.txt"):
     with p.open() as f:
         data = yaml.load(f, Loader=yaml.Loader)
         pubkeys = {item["name"]: item["pubkey"] for item in data}
+        pubkeys["operator_name"] = p.stem
         for name in MULTISIG_NAMES:
             if name not in pubkeys:
                 print_err(f"file '{p}' doesn't have the following key: {name}")
@@ -57,7 +58,7 @@ for name in MULTISIG_NAMES:
         key_names.append(key_name)
         command = f"yes | {BINARY} keys add {key_name} --pubkey '{pubkey}'"
         commands.append(command)
-        print(command)
+        print(command, f"# {pubkeys['operator_name']}")
 
     command = f"yes | {BINARY} keys add {name} --multisig {','.join(key_names)} --multisig-threshold {MULTISIG_THRESHOLD}"
     commands.append(command)
