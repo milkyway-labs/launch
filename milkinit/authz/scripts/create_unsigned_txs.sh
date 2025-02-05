@@ -7,7 +7,6 @@ echo -e "\033[92mStaker:\033[0m $STAKER"
 echo -e "\033[92mStaker controller:\033[0m $STAKER_CONTROLLER"
 echo -e "\033[92mRewards collector:\033[0m $REWARDS_COLLECTOR"
 echo -e "\033[92mGrantee:\033[0m $GRANTEE"
-echo -e "\033[92mAllowed Validators:\033[0m $VALIDATORS"
 echo -e "\033[92mStaking Contract:\033[0m $CONTRACT"
 echo -e "\033[92mSource Channel:\033[0m $SOURCE_CHANNEL"
 
@@ -20,40 +19,44 @@ initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.authz.v1be
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_01.json
 printf "."
 
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.feegrant.v1beta1.MsgGrantAllowance" --expiration 0 \
+initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.authz.v1beta1.MsgRevoke" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_02.json
 printf "."
 
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress" --expiration 0 \
+initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.feegrant.v1beta1.MsgGrantAllowance" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_03.json
 printf "."
 
-initiad tx authz grant $GRANTEE delegate --allowed-validators $VALIDATORS --expiration 0 \
+initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_04.json
 printf "."
 
-initiad tx authz grant $GRANTEE unbond --allowed-validators $VALIDATORS --expiration 0 \
+initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.staking.v1beta1.MsgDelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_05.json
 printf "."
 
-initiad tx authz grant $GRANTEE redelegate --allowed-validators $VALIDATORS --expiration 0 \
+initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.staking.v1beta1.MsgUndelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_06.json
 printf "."
 
-initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward" --expiration 0 \
+initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.staking.v1beta1.MsgBeginRedelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_07.json
 printf "."
 
+initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward" --expiration 0 \
+  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_08.json
+printf "."
+
 GRANTER=$STAKER GRANTEE=$GRANTEE SOURCE_CHANNEL=$SOURCE_CHANNEL RECEIVER=$CONTRACT \
-  envsubst < transfer_authz_template.json > staker_tx_08.json
+  envsubst < transfer_authz_template.json > staker_tx_09.json
 printf "."
 
 initiad tx feegrant grant $STAKER $GRANTEE --allowed-messages "/cosmos.staking.v1beta1.MsgDelegate" \
-  --generate-only --offline -a 0 -s 0 > staker_tx_09.json
+  --generate-only --offline -a 0 -s 0 > staker_tx_10.json
 printf "."
 
 initiad tx distribution set-withdraw-addr $REWARDS_COLLECTOR \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_10.json
+  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_11.json
 printf "."
 
 jq -s '{
