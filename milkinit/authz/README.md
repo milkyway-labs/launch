@@ -10,14 +10,14 @@ The following multisig accounts are generated from [the previous process](../mul
 
 | Name                | Address                                       |
 | ------------------- | --------------------------------------------- |
-| `Staker`            | `init18h6va7k4w28n79mmuuqzv0rqfgquhzsuh9qrnk` |
-| `Staker Controller` | `init15y5jaadsrg6cr9fjlgcn3r56dexxzgkk2z6ttr` |
-| `Rewards Collector` | `init1ehn8y3fhu6e42vuj5az7mzvtc3gem9v6uswr03` |
-| `Grantee`           | `init1...`                                    |
+| `Staker`            | `init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r` |
+| `Staker Controller` | `init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0` |
+| `Rewards Collector` | `init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp` |
+| `Grantee`           | `init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt` |
 
 ### Signing signatures
 
-For your convenience, the following unsigned transaction files are prepared using [scripts/create_unsigned_txs.sh](./scripts/create_unsigned_txs.sh).
+For your convenience, the following unsigned transaction files are prepared using [scripts/create\_unsigned\_txs.sh](./scripts/create_unsigned_txs.sh).
 
 - `staker_tx.json`
 - `rewards_collector_tx.json`
