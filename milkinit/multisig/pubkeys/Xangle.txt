@@ -1,0 +1,14 @@
+- address: init1hrtgp7cfkq2r6f85egxs89q0y5d0hzs8xulydn
+  name: staker
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Az6Anidgj83+jVuGx6Ww0Na8rwI87jWl/oe4kGuraFsH"}'
+  type: local
+
+- address: init1ze9ypv88phc5rez6k7lhvx9jra8zssck8nffd4
+  name: staker-controller
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AyrRxMBOpbEUUujJ+rZ0af12bkuQrcVwOYfFZx8kEYcW"}'
+  type: local
+
+- address: init15wghmu2rrkca9frgdhvhpaa775jpwsx54m98tj
+  name: rewards-collector
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Ao0OlUM0BPIlB/V4Cy6ymk7Trrms4Z+2Vk0vUC8JzS5S"}'
+  type: local
