@@ -39,10 +39,10 @@
       "amount": [
         {
           "denom": "uinit",
-          "amount": "4500"
+          "amount": "7500"
         }
       ],
-      "gas_limit": "300000",
+      "gas_limit": "500000",
       "payer": "",
       "granter": ""
     },

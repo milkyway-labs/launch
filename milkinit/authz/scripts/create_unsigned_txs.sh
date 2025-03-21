@@ -74,10 +74,10 @@ jq -s '{
       "amount": [
         {
           "denom": "uinit",
-          "amount": "12000"
+          "amount": "15000"
         }
       ],
-      "gas_limit": 800000,
+      "gas_limit": 1000000,
       "payer": "",
       "granter": ""
     },
