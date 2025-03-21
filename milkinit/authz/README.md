@@ -17,7 +17,7 @@ The following multisig accounts are generated from [the previous process](../mul
 
 ### Signing signatures
 
-For your convenience, the following unsigned transaction files are prepared using [scripts/create\_unsigned\_txs.sh](./scripts/create_unsigned_txs.sh).
+For your convenience, the following unsigned transaction files are prepared using [scripts/create_unsigned_txs.sh](./scripts/create_unsigned_txs.sh).
 
 - `staker_tx.json`
 - `rewards_collector_tx.json`
