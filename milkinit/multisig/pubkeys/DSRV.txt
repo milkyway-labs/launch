@@ -1,14 +1,12 @@
-- address: init1gdj8ufq8hge2eddq48md8w3sp3w9p9dm596p4y
+- address: init1wjl7c4g39683kx89xflsww5p68ywpmpf5dxg3v
   name: staker
-  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AzZjTBEs9FWZxCibsCz1qUq9BC8ONztezOuCy+9UV6LU"}'
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AqUp+pLK1doyrzODvqqtkkUBQADj/x1lnhLu1+jMNBW7"}'
   type: local
-
-- address: init1fvskngmjv3n3qfpdg33s6emh6p0vr5xlmc7c98
+- address: init1ngjhlejv02eg3hnjakajenpvxxsar33zju9c0k
   name: staker-controller
-  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Az3eybP+VsaBp2SpVzFhcCIvD071OotM9lpr3s952lQT"}'
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AsyU0pO3dqZ+58XMlid2yeaZWyt1zG/fUzVw2zS7d8Jx"}'
   type: local
-
-- address: init1qvlaq7zjy4prsl5v98nea0ucatt6dvrzhr0wa2
+- address: init16setga85fyu3tj4w59d6y7dnj348vmfwsdl3qf
   name: rewards-collector
-  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AoPbf8SGQdutq3Ewqvaj0GXo9Bl31hU/S4yQgJ/hgtBV"}'
+  pubkey: '{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Asm39oZuBCNQjN9h2sVt38YyxgZ0Q3+gWtwmii8lB/hS"}'
   type: local
