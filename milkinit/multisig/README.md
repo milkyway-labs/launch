@@ -97,7 +97,7 @@ initiad keys show rewards-collector -d
 
 ### Creating multisig accounts
 
-After collecting public keys from all operators, the MilkyWay team will handle creating the multisig accounts by running the [scripts/create_multisigs.py](./scripts/create_multisigs.py) script.
+After collecting public keys from all operators, the MilkyWay team will handle creating the multisig accounts by running the [scripts/create\_multisigs.py](./scripts/create_multisigs.py) script.
 
 ## Remark
 
