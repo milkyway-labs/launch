@@ -3,15 +3,15 @@
     "messages": [
       {
         "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "$GRANTER",
-        "grantee": "$GRANTEE",
+        "granter": "init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
         "grant": {
           "authorization": {
             "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
             "allocations": [
               {
                 "source_port": "transfer",
-                "source_channel": "$SOURCE_CHANNEL",
+                "source_channel": "channel-29",
                 "spend_limit": [
                   {
                     "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
@@ -19,7 +19,7 @@
                   }
                 ],
                 "allow_list": [
-                  "$RECEIVER"
+                  "init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj"
                 ]
               }
             ]
