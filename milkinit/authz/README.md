@@ -10,17 +10,17 @@ The following multisig accounts are generated from [the previous process](../mul
 
 | Name                | Address                                       |
 | ------------------- | --------------------------------------------- |
-| `Staker`            | `init18h6va7k4w28n79mmuuqzv0rqfgquhzsuh9qrnk` |
-| `Staker Controller` | `init15y5jaadsrg6cr9fjlgcn3r56dexxzgkk2z6ttr` |
-| `Rewards Collector` | `init1ehn8y3fhu6e42vuj5az7mzvtc3gem9v6uswr03` |
-| `Grantee`           | `init1...`                                    |
+| `Staker`            | `init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r` |
+| `Staker Controller` | `init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0` |
+| `Rewards Collector` | `init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp` |
+| `Grantee`           | `init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt` |
 
 ### Signing signatures
 
 For your convenience, the following unsigned transaction files are prepared using [scripts/create_unsigned_txs.sh](./scripts/create_unsigned_txs.sh).
 
-- `staker_tx.json`
-- `rewards_collector_tx.json`
+- [scripts/staker_tx.json](./scripts/staker_tx.json)
+- [scripts/rewards_collector_tx.json](./scripts/rewards_collector_tx.json)
 
 #### `staker_tx.json`
 
@@ -45,12 +45,12 @@ Connect your ledger to your device and sign it.
 initiad keys add op-staker --ledger --index 0
 
 # We use the following public RPC endpoint to get account number.
-NODE="https://..." # TODO: needs to determine
-STAKER_ADDR="init1..." # TODO: needs to determine
+NODE="https://..." # TODO: need to determine
+STAKER_ADDR="init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r"
 
 # Sign the unsigned transaction and print the signature.
 initiad tx sign staker_tx.json \
---chain-id XXX \ # TODO: needs to determine
+--chain-id interwoven-1 \
 --from op-staker \
 --multisig $STAKER_ADDR \
 --ledger \
@@ -71,12 +71,12 @@ Again, connect your ledger to your device and sign it.
 initiad keys add op-rewards-collector --ledger --index 2
 
 # We use the following public RPC endpoint to get account number.
-NODE="https://..." # TODO: needs to determine
-REWARDS_COLLECTOR_ADDR="init1..." # TODO: needs to determine
+NODE="https://..." # TODO: need to determine
+REWARDS_COLLECTOR_ADDR="init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp"
 
 # Sign the unsigned transaction
 initiad tx sign rewards_collector_tx.json \
---chain-id XXX \ # TODO: needs to determine
+--chain-id interwoven-1 \
 --from op-rewards-collector \
 --multisig $REWARDS_COLLECTOR_ADDR \
 --ledger \

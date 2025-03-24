@@ -1,0 +1,231 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.authz.v1beta1.MsgGrant"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.authz.v1beta1.MsgRevoke"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/initia.mstaking.v1.StakeAuthorization",
+            "max_tokens": [],
+            "allow_list": {
+              "address": [
+                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                "initvaloper18r4qxc93nf0qh47qf22lj2pjhrhcun8mdpmcc0",
+                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z"
+              ]
+            },
+            "authorization_type": "AUTHORIZATION_TYPE_DELEGATE"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/initia.mstaking.v1.StakeAuthorization",
+            "max_tokens": [],
+            "allow_list": {
+              "address": [
+                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                "initvaloper18r4qxc93nf0qh47qf22lj2pjhrhcun8mdpmcc0",
+                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z"
+              ]
+            },
+            "authorization_type": "AUTHORIZATION_TYPE_UNDELEGATE"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/initia.mstaking.v1.StakeAuthorization",
+            "max_tokens": [],
+            "allow_list": {
+              "address": [
+                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                "initvaloper18r4qxc93nf0qh47qf22lj2pjhrhcun8mdpmcc0",
+                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z"
+              ]
+            },
+            "authorization_type": "AUTHORIZATION_TYPE_REDELEGATE"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+            "allocations": [
+              {
+                "source_port": "transfer",
+                "source_channel": "channel-29",
+                "spend_limit": [
+                  {
+                    "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                    "denom": "uinit"
+                  }
+                ],
+                "allow_list": [
+                  "init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj"
+                ]
+              }
+            ]
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.feegrant.v1beta1.MsgGrantAllowance",
+        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "allowance": {
+          "@type": "/cosmos.feegrant.v1beta1.AllowedMsgAllowance",
+          "allowance": {
+            "@type": "/cosmos.feegrant.v1beta1.BasicAllowance",
+            "spend_limit": [],
+            "expiration": null
+          },
+          "allowed_messages": [
+            "/cosmos.staking.v1beta1.MsgDelegate"
+          ]
+        }
+      },
+      {
+        "@type": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress",
+        "delegator_address": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "withdraw_address": "init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp"
+      }
+    ]
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uinit",
+          "amount": "15000"
+        }
+      ],
+      "gas_limit": 1000000,
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}
