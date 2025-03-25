@@ -1,0 +1,138 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp",
+        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+        "grant": {
+          "authorization": {
+            "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+            "allocations": [
+              {
+                "source_port": "transfer",
+                "source_channel": "channel-29",
+                "spend_limit": [
+                  {
+                    "denom": "uinit",
+                    "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                  }
+                ],
+                "allow_list": [
+                  "init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj"
+                ],
+                "allowed_packet_data": []
+              }
+            ]
+          },
+          "expiration": null
+        }
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A4hW2Gdjup3yFGs0og0DJ/yh8iYOB+Fc+usvWxrOnB3K"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A8HZJkm/NY+VxaVnHhqq8P1SKEFZc7XvQ70oRTi+0fzS"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A/hEBDv0+d6xc3UQvkIu0gnPu8zGch9I8pgf3uO7hMxc"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "AxkGoMBs6l33/+bumcfYP9fhsuESkHaXvkTB1yCP9CAO"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "Asm39oZuBCNQjN9h2sVt38YyxgZ0Q3+gWtwmii8lB/hS"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "Anp1anez4QWETxCOwjfhsea/ZgsV6nOAnCIERQAyD3HJ"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "ApyFtp335skky3VZm45TO38X5q8OtaiFHIUVag4hqKlF"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "/g=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uinit",
+          "amount": "7500"
+        }
+      ],
+      "gas_limit": "500000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "CkGUkiFNthXPG1QM9UifOnQFBVzTzhcUUfRRTocyWCg3vSPYhTBec+a5dS3r2Gbj9OU0GzpdkYSHzvlbj0kmBLZfGwpBFUjKsA4Ifon2OZQpVQ/nxJfnUw1zItsPqSK35uwAJ+Mi/+4ltj3jSdDINtGInllgbDsTUUiWfda/VBHxPSO3jhwKQXt9/yUAm76SBSQyizIz7cAl4FzWAlTXg8kwk85kVj/iXBrKbnTvWCcWAoRpodPvsbe4SesaJn0KhStTdhgPlOMbCkGroly7hNq7z5ynR3YiOL2FZgtK5SL4pMfFqxSc0Py+CB3TBk0NVxoQ5bUNwd6bZTcyncref4F4atzXgIMx041qGwpB7gRXcbiaoMfguCUcC0AVyQaBypULss2ZTzkEfrtTKeEVtUTrCvWZLvGzwDDjxgmm2EF+0y0+D7+2tC0mgY5WDBwKQWu5yNZqNIOcStckpQRLmDyaOE81oCuJV2vJe8Li3nPPcSt858ZZ7pRo65Me2JUl5qTf0Bnj+dZ+yyjov9OlrE0cCkH7D1WyoHNyhRu10YJhvNfm+6FCwxXjJ4+6s4nyw7MR+wd0Xmt+SPktKHNk054BdPuiJS3XJb19KWeO1oZkyoFcHA=="
+  ]
+}
