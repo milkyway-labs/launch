@@ -9,6 +9,6 @@
   type: ledger
 
 - address: bbn1lwgee0kde6dtpt5egz53k5ejj4jdsd8dh5v97k
-  name: rewards-controller
+  name: rewards-collector
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A4qrmvyYp6JT6jcLPHa9u4ugMnWfXEjEUaUpYblyDV5+"}'
   type: ledger
