@@ -9,6 +9,6 @@
   type: ledger
 
 - address: bbn1l924vkypf847nxtz5puf5hfll9cvrufxfnyh8t
-  name: reards-collector
+  name: rewards-collector
   pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AsLnkhBShJIwAsNsKHbIah5ZIj0VX/CIgbLL6y5vWJng"}'
   type: ledger
