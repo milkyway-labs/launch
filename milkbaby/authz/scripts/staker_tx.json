@@ -1,0 +1,177 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.authz.v1beta1.MsgGrant"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.authz.v1beta1.MsgRevoke"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/babylon.epoching.v1.MsgWrappedDelegate"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/babylon.epoching.v1.MsgWrappedUndelegate"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/babylon.epoching.v1.MsgWrappedBeginRedelegate"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+            "allocations": [
+              {
+                "source_port": "transfer",
+                "source_channel": "channel-4",
+                "spend_limit": [
+                  {
+                    "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                    "denom": "ubbn"
+                  }
+                ],
+                "allow_list": [
+                  "milk1qg5ega6dykkxc307y25pecuufrjkxkaggkkxh7nad0vhyhtuhw3ssgcye4"
+                ]
+              }
+            ]
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.feegrant.v1beta1.MsgGrantAllowance",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "allowance": {
+          "@type": "/cosmos.feegrant.v1beta1.AllowedMsgAllowance",
+          "allowance": {
+            "@type": "/cosmos.feegrant.v1beta1.BasicAllowance",
+            "spend_limit": [],
+            "expiration": null
+          },
+          "allowed_messages": [
+            "/babylon.epoching.v1.MsgWrappedDelegate"
+          ]
+        }
+      },
+      {
+        "@type": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress",
+        "delegator_address": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "withdraw_address": "bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82"
+      }
+    ]
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "ubbn",
+          "amount": "15000"
+        }
+      ],
+      "gas_limit": 1000000,
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}
