@@ -7,7 +7,6 @@ echo "\033[92mStaker:\033[0m $STAKER"
 echo "\033[92mStaker controller:\033[0m $STAKER_CONTROLLER"
 echo "\033[92mRewards collector:\033[0m $REWARDS_COLLECTOR"
 echo "\033[92mGrantee:\033[0m $GRANTEE"
-echo "\033[92mWhitelisted validators:\033[0m $VALIDATORS"
 echo "\033[92mStaking Contract:\033[0m $CONTRACT"
 echo "\033[92mSource Channel:\033[0m $SOURCE_CHANNEL"
 
@@ -36,15 +35,15 @@ babylond tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.distribut
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_05.json
 printf "."
 
-babylond tx authz grant $GRANTEE delegate --allowed-validators $VALIDATORS --expiration 0 \
+babylond tx authz grant $GRANTEE generic --msg-type "/babylon.epoching.v1.MsgWrappedDelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_06.json
 printf "."
 
-babylond tx authz grant $GRANTEE unbond --allowed-validators $VALIDATORS --expiration 0 \
+babylond tx authz grant $GRANTEE generic --msg-type "/babylon.epoching.v1.MsgWrappedUndelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_07.json
 printf "."
 
-babylond tx authz grant $GRANTEE redelegate --allowed-validators $VALIDATORS --expiration 0 \
+babylond tx authz grant $GRANTEE generic --msg-type "/babylon.epoching.v1.MsgWrappedBeginRedelegate" --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_08.json
 printf "."
 
@@ -56,7 +55,7 @@ GRANTER=$STAKER GRANTEE=$GRANTEE SOURCE_CHANNEL=$SOURCE_CHANNEL RECEIVER=$CONTRA
   envsubst < transfer_authz_template.json > staker_tx_10.json
 printf "."
 
-babylond tx feegrant grant $STAKER $GRANTEE --allowed-messages "/cosmos.staking.v1beta1.MsgDelegate" \
+babylond tx feegrant grant $STAKER $GRANTEE --allowed-messages "/babylon.epoching.v1.MsgWrappedDelegate" \
   --generate-only --offline -a 0 -s 0 > staker_tx_11.json
 printf "."
 

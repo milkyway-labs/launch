@@ -1,0 +1,14 @@
+- address: bbn1m6pqmy7x05ax0xfykl5u4qtw3d5hpru2482y0s
+  name: staker
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"All2tXJcJkDrHJ8Wf+Msv4i5ZR3KyUpjLbtqKD1BVQYf"}'
+  type: local
+
+- address: bbn1kjd9x4xrsecz44hl5es2j3n92eaqfqg8hd4ed6
+  name: staker-controller
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A03j8CunpLxM9mcwYCXLWAjIQmI4uZNg9AG/Ki/9LOSx"}'
+  type: local
+
+- address: bbn1rqs2nsrcg8we7enas2m4lvmdeed6nngg7exqg3
+  name: rewards-collector
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AtwjfiEHHWefiNN+bY0/8mrXSRs5SLgpsPfzglxDvbEV"}'
+  type: local
