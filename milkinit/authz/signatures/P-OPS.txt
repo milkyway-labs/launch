@@ -1,0 +1,5 @@
+Signature 1
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A6J+/IYQxVY/642MVp9FY195bcbEGekVP//eKxoM0zCp"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"JMBJET0p5GzK2lbLmCtbmK9j8leZno3YaqJpp1oT6HUXRCd3lzD5+9AcIeYz3fIn22n0PSlcDw/WlEd19cu4/Rw="}},"sequence":"0"}]}
+
+Signature 2
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Anp1anez4QWETxCOwjfhsea/ZgsV6nOAnCIERQAyD3HJ"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"a7nI1mo0g5xK1ySlBEuYPJo4TzWgK4lXa8l7wuLec89xK3znxlnulGjrkx7YlSXmpN/QGeP51n7LKOi/06WsTRw="}},"sequence":"0"}]}

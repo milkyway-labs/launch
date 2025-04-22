@@ -1,0 +1,94 @@
+# Grant Authorizations
+
+## Overview
+
+In this step, operators are required to sign signatures to setup the preparation for launch step in [this technical architecture](https://github.com/milkyway-labs/architecture).
+
+### Multisig Accounts
+
+The following multisig accounts are generated from [the previous process](../multisig/README.md).
+
+| Name                | Address                                      |
+| ------------------- | -------------------------------------------- |
+| `Staker`            | `bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn` |
+| `Staker Controller` | `bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek` |
+| `Rewards Collector` | `bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82` |
+| `Grantee`           | `bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg` |
+
+### Signing signatures
+
+For your convenience, the following unsigned transaction files are prepared using [scripts/create_unsigned_txs.sh](./scripts/create_unsigned_txs.sh).
+
+- [scripts/staker_tx.json](./scripts/staker_tx.json)
+- [scripts/rewards_collector_tx.json](./scripts/rewards_collector_tx.json)
+
+#### `staker_tx.json`
+
+The first transaction consists of the following messages from the `Staker` multisig account:
+
+1. Allows the `Staker Controller` multisig account to execute `/cosmos.authz.v1beta1.MsgGrant` on behalf of it
+2. Allows the `Staker Controller` multisig account to execute `/cosmos.feegrant.v1beta1.MsgGrantAllowance` on behalf of it
+3. Allows the `Staker Controller` multisig account to execute `/cosmos.distribution.v1beta1.SetWithdrawAddress` on behalf of it
+4. Allows the `Grantee` multisig account to delegate to the whitelisted validators on behalf of it
+5. Allows the `Grantee` multisig account to undelegate from the whitelisted validators on behalf of it
+6. Allows the `Grantee` multisig account to redelegate to the whitelisted validators on behalf of it
+7. Allows the `Grantee` multisig account to withdraw staking rewards on behalf of it
+8. Allows the `Grantee` multiisg account to transfer unbonded tokens to the staking contract on behalf of it
+9. Allows the `Grantee` multisig account to use it as the fee granter for tx
+10. Change the withdraw address of staking rewards to the `Rewards Collector` multisig account
+
+Connect your ledger to your device and sign it.
+
+```bash
+# Import your `Staker` wallet
+# Change index to the one that you have used when setting the account
+babylond keys add op-staker --ledger --index 0
+
+# We use the following public RPC endpoint to get account number.
+NODE="https://babylon.nodes.guru/rpc"
+STAKER_ADDR="bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn"
+
+# Sign the unsigned transaction and print the signature.
+babylond tx sign staker_tx.json \
+--chain-id bbn-1 \
+--from op-staker \
+--multisig $STAKER_ADDR \
+--ledger \
+--node $NODE \
+--sign-mode amino-json \
+--signature-only
+```
+
+#### `rewards_collector_tx.json`
+
+The second transaction has only one message from the `Rewards Collector` multisig account which allows the `Grantee` multisig account to transfer withdrawn staking rewards to the staking contract on behalf of it.
+
+Again, connect your ledger to your device and sign it.
+
+```bash
+# Import your Rewards Collector wallet
+# Change index to the one that you have used when setting the account
+babylond keys add op-rewards-collector --ledger --index 2
+
+# We use the following public RPC endpoint to get account number.
+NODE="https://babylon.nodes.guru/rpc"
+REWARDS_COLLECTOR_ADDR="bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82"
+
+# Sign the unsigned transaction
+babylond tx sign rewards_collector_tx.json \
+--chain-id bbn-1 \
+--from op-rewards-collector \
+--multisig $REWARDS_COLLECTOR_ADDR \
+--ledger \
+--node $NODE \
+--signature-only
+```
+
+### Submitting your signatures
+
+In order to setup the pre-launch described in [this technical architecture](https://github.com/milkyway-labs/architecture#preparation-for-launch), we need to collect signatures from all operators.
+
+1. Fork this repository.
+2. Copy the `{OPERATOR_NAME}.txt` file inside `signatures` directory into the same directory
+3. Input your signatures
+4. Create a pull request
