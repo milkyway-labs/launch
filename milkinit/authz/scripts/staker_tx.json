@@ -182,6 +182,9 @@
                 ],
                 "allow_list": [
                   "init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj"
+                ],
+                "allowed_packet_data": [
+                  "*"
                 ]
               }
             ]
