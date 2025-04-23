@@ -20,6 +20,9 @@
                 ],
                 "allow_list": [
                   "$RECEIVER"
+                ],
+                "allowed_packet_data": [
+                  "*"
                 ]
               }
             ]
