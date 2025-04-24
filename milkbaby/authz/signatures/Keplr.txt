@@ -1,5 +1,5 @@
 staker_tx.json
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"ArsFZ/jPUvqqf1tqbxT4XnjUa6q/pPpS6vbocNIU0Fsq"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"dM5F5DciztGeP/akamRN45kyB1qbgdF0jNuH6eRhHHtcx7tIEQ/8a7vDfavGO+sYB5D+9OecUF7H0GTIpRQK+A=="}},"sequence":"1"}]}
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"ArsFZ/jPUvqqf1tqbxT4XnjUa6q/pPpS6vbocNIU0Fsq"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"TkIbBMi9q3SPyE1qzvPPsYnE73c9XqlSuFoY/+i76d011cWE8BGVVmqloBD5lUVU8Moxlle1DeJcSqkFuGhluw=="}},"sequence":"1"}]}
 
 rewards_collector_tx.json
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AnGnUdA8j5G9k4+Zqh4s+HQMxj/kISsMUR7eX7XjNrNa"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"VKS8NQ/i+WolPwnhbHzWaJA4JWgvfgRfH3bpfEbUC2QD4Oss3JqB4iv6fK/LqbcyA4DDyLt7xZ60dzqbbnHNDA=="}},"sequence":"1"}]}
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AnGnUdA8j5G9k4+Zqh4s+HQMxj/kISsMUR7eX7XjNrNa"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"xP02h/GQ3HGon/w6GKyBLDN+FfkvYYIxI44xb+jrHLhgu+7U6s0UDFMdn8KIjmX0AX/ZA6IyRcvae534NSw7bQ=="}},"sequence":"1"}]}
