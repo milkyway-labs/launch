@@ -21,7 +21,9 @@
                 "allow_list": [
                   "init17p9rzwnnfxcjp32un9ug7yhhzgtkhvl9jfksztgw5uh69wac2pgsj6uxxj"
                 ],
-                "allowed_packet_data": []
+                "allowed_packet_data": [
+                  "*"
+                ]
               }
             ]
           },
@@ -75,14 +77,9 @@
           "multi": {
             "bitarray": {
               "extra_bits_stored": 7,
-              "elems": "/g=="
+              "elems": "fg=="
             },
             "mode_infos": [
-              {
-                "single": {
-                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
-                }
-              },
               {
                 "single": {
                   "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
@@ -116,7 +113,7 @@
             ]
           }
         },
-        "sequence": "0"
+        "sequence": "1"
       }
     ],
     "fee": {
@@ -133,6 +130,6 @@
     "tip": null
   },
   "signatures": [
-    "CkGUkiFNthXPG1QM9UifOnQFBVzTzhcUUfRRTocyWCg3vSPYhTBec+a5dS3r2Gbj9OU0GzpdkYSHzvlbj0kmBLZfGwpBFUjKsA4Ifon2OZQpVQ/nxJfnUw1zItsPqSK35uwAJ+Mi/+4ltj3jSdDINtGInllgbDsTUUiWfda/VBHxPSO3jhwKQXt9/yUAm76SBSQyizIz7cAl4FzWAlTXg8kwk85kVj/iXBrKbnTvWCcWAoRpodPvsbe4SesaJn0KhStTdhgPlOMbCkGroly7hNq7z5ynR3YiOL2FZgtK5SL4pMfFqxSc0Py+CB3TBk0NVxoQ5bUNwd6bZTcyncref4F4atzXgIMx041qGwpB7gRXcbiaoMfguCUcC0AVyQaBypULss2ZTzkEfrtTKeEVtUTrCvWZLvGzwDDjxgmm2EF+0y0+D7+2tC0mgY5WDBwKQWu5yNZqNIOcStckpQRLmDyaOE81oCuJV2vJe8Li3nPPcSt858ZZ7pRo65Me2JUl5qTf0Bnj+dZ+yyjov9OlrE0cCkH7D1WyoHNyhRu10YJhvNfm+6FCwxXjJ4+6s4nyw7MR+wd0Xmt+SPktKHNk054BdPuiJS3XJb19KWeO1oZkyoFcHA=="
+    "CkEciM+KUJpG5THHGgON9y2+KMX5B0agOHx96r23hTDXqV2LRTsqaY+ei/vqyZGS6CIEQGcFTScfjlmdKUXyrh2GGwpBs42L6NCG2+nK2oHVDsi3XRNf4XgRW8sK/ystK996a78Wl38CFb4NsYh2ZO2n4c7VA9cOST6yHa17KZP1w/53AhwKQUCGKv8emeXjcoFeZumK5BkrDT5z9tyxtwkyAcrmO9/gNSM4PZbYCOvBXqHKZC2HYHkfuoJRQ4OEG2r5fgI53LMcCkHcSByPsEJ8n0o3sKeqCn5TyBvr9eUJCTYGgQlPCh9n7xs0AsEB+tUPzouj61pWpzTuK4Tixfg+LCFkLQkOX+/nHApBeSDSQe4zpLCTY6uPlTAgVpmoV7oXEhlgNZrYSQA+mqMpQh0ryZc1d7GV3zNkh+fEuDX1lEYpTGjcHvbPM2meNRwKQR5f5Usc9C23h3vElzyYMb6JQW5MRsCOYgrZbKYFr52zRLrLZoWXODbo9h1cDxITGzJDoQdj3zazTVzOdLdcILIb"
   ]
 }
