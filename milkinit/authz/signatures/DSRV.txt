@@ -1,5 +1,5 @@
 staker_tx.json
-{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AqUp+pLK1doyrzODvqqtkkUBQADj/x1lnhLu1+jMNBW7"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"8xA2+HSDzOW91xYv/cgzapvZXZBvFoihJrbqhTreWLQa7wd/TC5riwBznR/KqGH0QfCB8U0Y8IEceIOcPuqvSRw="}},"sequence":"1"}]}
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AqUp+pLK1doyrzODvqqtkkUBQADj/x1lnhLu1+jMNBW7"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"HCepSciHT40cdkah+w/ujpfKM+fMcEJ8qGPWOmB9vT8+ktZf+/Mdh+hWd7H/q8xNfAI5HL12SGYUmbChP/IyMxw="}},"sequence":"1"}]}
 
 rewards_collector_tx.json
-{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Asm39oZuBCNQjN9h2sVt38YyxgZ0Q3+gWtwmii8lB/hS"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"TU6nyp0NlBJm8vnhe3vwBERjMiTzJSsiLi0LVqCoFgQuRWPBYncTLpsbTbX1s3E5Nm/o1Ihd51VOuO5sW1v9rhw="}},"sequence":"1"}]}
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Asm39oZuBCNQjN9h2sVt38YyxgZ0Q3+gWtwmii8lB/hS"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"3Egcj7BCfJ9KN7Cnqgp+U8gb6/XlCQk2BoEJTwofZ+8bNALBAfrVD86Lo+taVqc07iuE4sX4PiwhZC0JDl/v5xw="}},"sequence":"1"}]}
