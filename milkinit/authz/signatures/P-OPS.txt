@@ -1,5 +1,5 @@
 Signature 1
-{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A6J+/IYQxVY/642MVp9FY195bcbEGekVP//eKxoM0zCp"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"JMBJET0p5GzK2lbLmCtbmK9j8leZno3YaqJpp1oT6HUXRCd3lzD5+9AcIeYz3fIn22n0PSlcDw/WlEd19cu4/Rw="}},"sequence":"0"}]}
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A6J+/IYQxVY/642MVp9FY195bcbEGekVP//eKxoM0zCp"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"uFSoQwNEq1D+hDxaQ1e71kWYO65qJLEdY2kbvHyN0aw3QL1/QCw5f2qXn2cZ08fcpugFchOoWde84OF2zjl0pBw="}},"sequence":"1"}]}
 
 Signature 2
-{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Anp1anez4QWETxCOwjfhsea/ZgsV6nOAnCIERQAyD3HJ"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"a7nI1mo0g5xK1ySlBEuYPJo4TzWgK4lXa8l7wuLec89xK3znxlnulGjrkx7YlSXmpN/QGeP51n7LKOi/06WsTRw="}},"sequence":"0"}]}
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Anp1anez4QWETxCOwjfhsea/ZgsV6nOAnCIERQAyD3HJ"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"68V1F8AgjUy3IYsRzrcS5hCjCPD/JM/usTE61JWe7AANiGq3ua7Ojh5x2ybdWX5erqt4ekpnud7teT6Bo5sPVRw="}},"sequence":"1"}]}
