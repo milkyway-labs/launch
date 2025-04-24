@@ -20,6 +20,9 @@
                 ],
                 "allow_list": [
                   "milk1qg5ega6dykkxc307y25pecuufrjkxkaggkkxh7nad0vhyhtuhw3ssgcye4"
+                ],
+                "allowed_packet_data": [
+                  "*"
                 ]
               }
             ]
