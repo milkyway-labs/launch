@@ -4,66 +4,6 @@
       {
         "@type": "/cosmos.authz.v1beta1.MsgGrant",
         "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
-        "grant": {
-          "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.authz.v1beta1.MsgGrant"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
-        "grant": {
-          "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.authz.v1beta1.MsgRevoke"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
-        "grant": {
-          "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.feegrant.v1beta1.MsgGrantAllowance"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
-        "grant": {
-          "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.feegrant.v1beta1.MsgRevokeAllowance"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
-        "grant": {
-          "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
         "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
         "grant": {
           "authorization": {
@@ -157,18 +97,6 @@
         "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
         "grant": {
           "authorization": {
-            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
-            "msg": "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward"
-          },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
-        "grant": {
-          "authorization": {
             "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
             "allocations": [
               {
@@ -191,27 +119,6 @@
           },
           "expiration": null
         }
-      },
-      {
-        "@type": "/cosmos.feegrant.v1beta1.MsgGrantAllowance",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
-        "allowance": {
-          "@type": "/cosmos.feegrant.v1beta1.AllowedMsgAllowance",
-          "allowance": {
-            "@type": "/cosmos.feegrant.v1beta1.BasicAllowance",
-            "spend_limit": [],
-            "expiration": null
-          },
-          "allowed_messages": [
-            "/cosmos.staking.v1beta1.MsgDelegate"
-          ]
-        }
-      },
-      {
-        "@type": "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress",
-        "delegator_address": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "withdraw_address": "init1c6u0pslgmqvd6qkt3usx6apktz4mhtylrtadkp"
       }
     ]
   },
