@@ -16,26 +16,6 @@ echo "\033[92mSource Channel:\033[0m $SOURCE_CHANNEL"
 echo
 echo "\033[92mCreating staker_tx.json\033[0m"
 
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.authz.v1beta1.MsgGrant" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_01.json
-printf "."
-
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.authz.v1beta1.MsgRevoke" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_02.json
-printf "."
-
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.feegrant.v1beta1.MsgGrantAllowance" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_03.json
-printf "."
-
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.feegrant.v1beta1.MsgRevokeAllowance" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_04.json
-printf "."
-
-initiad tx authz grant $STAKER_CONTROLLER generic --msg-type "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_05.json
-printf "."
-
 initiad tx authz grant $GRANTEE delegate --allowed-validators $VALIDATORS --expiration 0 \
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_06.json
 printf "."
@@ -48,20 +28,8 @@ initiad tx authz grant $GRANTEE redelegate --allowed-validators $VALIDATORS --ex
   --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_08.json
 printf "."
 
-initiad tx authz grant $GRANTEE generic --msg-type "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward" --expiration 0 \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_09.json
-printf "."
-
 GRANTER=$STAKER GRANTEE=$GRANTEE SOURCE_CHANNEL=$SOURCE_CHANNEL RECEIVER=$CONTRACT \
   envsubst < transfer_authz_template.json > staker_tx_10.json
-printf "."
-
-initiad tx feegrant grant $STAKER $GRANTEE --allowed-messages "/cosmos.staking.v1beta1.MsgDelegate" \
-  --generate-only --offline -a 0 -s 0 > staker_tx_11.json
-printf "."
-
-initiad tx distribution set-withdraw-addr $REWARDS_COLLECTOR \
-  --from $STAKER --generate-only --offline -a 0 -s 0 > staker_tx_12.json
 printf "."
 
 jq -s '{
