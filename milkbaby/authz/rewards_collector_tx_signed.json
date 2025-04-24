@@ -21,7 +21,9 @@
                 "allow_list": [
                   "milk1qg5ega6dykkxc307y25pecuufrjkxkaggkkxh7nad0vhyhtuhw3ssgcye4"
                 ],
-                "allowed_packet_data": []
+                "allowed_packet_data": [
+                  "*"
+                ]
               }
             ]
           },
@@ -75,7 +77,7 @@
           "multi": {
             "bitarray": {
               "extra_bits_stored": 7,
-              "elems": "9A=="
+              "elems": "2g=="
             },
             "mode_infos": [
               {
@@ -106,7 +108,7 @@
             ]
           }
         },
-        "sequence": "0"
+        "sequence": "1"
       }
     ],
     "fee": {
@@ -123,6 +125,6 @@
     "tip": null
   },
   "signatures": [
-    "CkD8RqQ6yUao5FBEO8bmOoebt033pDnT7oYYTmCUhQF2JlqFU4VuBuPBALbC9vAGuGvj56hQhHqOD1uyJXXB4nxRCkBLbs9eUqEBRjEazC2gkPk8/wgrpZ3mrHdSyGjQWnZycQdUG7BCliF6/OxAeVgwo+SILtz2PXZaE7OvNX4vTaBwCkAgC+AwTxP3tOXbPNKGMgBrnX+SdmXTF4cwAvotpmBBMGYH/dmVnK1RNMWb273ggb/VmbQFX6iQfVa7Ppxy8dU2CkD9mjPtQ3cz4/cnKu8bQlkZETdZJoi1xXSuBD3/ADbdxHB1fv/sDRM5mCrGsCbKqnfEXxdI49/sBgwdqlSGi57sCkCAgaTWu18EG7JYxfh2mlAJ/Iv/M8aaqsA644wFn+S/PgoC3H6EXSbqUmR77rjHNWjM7IGW/KXAP5WXv9T2uxUL"
+    "CkDYL392tCwDeihA5VgDThIjstXsvbRh/55wOSl2bJPr4FX2kNmFjxuHpGs1say42AsX6kVULd8Sc1prOFJuq/bnCkB/CjCSqG+JYGG2aCTQQpLaMryuXOSdOTiddQxHWMIM5ifrG/T5UNrd8CKSD40+j0p9lU8po3omtoRj27PWU3dOCkDS9bofswhvgw3pWrwPPjP1MS7ALDJebsju/+DLqSKo4FiyR7JxjkbJf82dnrUd3W1X+M9nx/jILpF4XvLNn7g3CkDE/TaH8ZDccaif/DoYrIEsM34V+S9hgjEjjjFv6OscuGC77tTqzRQMUx2fwoiOZfQBf9kDojJFy9p7nfg1LDttCkA2oLI3s8VIG5baqKUDCKhqWXy+56mACgVqkZ8FAwhVCBXE833E0OAODB/WWYgXpw8TaqpQdGmvVPmgyJK74j6C"
   ]
 }
