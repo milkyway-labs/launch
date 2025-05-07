@@ -1,5 +1,5 @@
 Signature 1
-{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Ap3iS1vPzuqGbI3gHazfA9daepJ1Vk+Mx7k4qOmhqgOU"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"//dJfgcLKzzrqNvUK+LTQGQ4naGGSA2vGxsR2puqPFlqXNSvbd2weRdf0IUpqg2NoaPbxcjgDvtkoSXnC5HQJBs="}},"sequence":"1"}]}
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Ap3iS1vPzuqGbI3gHazfA9daepJ1Vk+Mx7k4qOmhqgOU"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"rorKGbOk+lq4kQU9Xn2dUcBRNUIJA1c5KrMOCnj/sTRffXPXKbOfFmsA0FMXkYYapjj9zKfKbVSrFdOcy1GIUhw="}},"sequence":"1"}]}
 
 Signature 2
 {"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"ApyFtp335skky3VZm45TO38X5q8OtaiFHIUVag4hqKlF"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"Hl/lSxz0LbeHe8SXPJgxvolBbkxGwI5iCtlspgWvnbNEustmhZc4Nuj2HVwPEhMbMkOhB2PfNrNNXM50t1wgshs="}},"sequence":"1"}]}
