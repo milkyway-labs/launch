@@ -2,97 +2,103 @@
   "body": {
     "messages": [
       {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
-        "grant": {
-          "authorization": {
-            "@type": "/initia.mstaking.v1.StakeAuthorization",
-            "max_tokens": [],
-            "allow_list": {
-              "address": [
-                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
-                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
-                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
-                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
-                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
-                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
-                "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
-                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
-                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
-                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
-                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
-                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
-                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
-                "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
-              ]
-            },
-            "authorization_type": "AUTHORIZATION_TYPE_DELEGATE"
+        "@type": "/cosmos.authz.v1beta1.MsgExec",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "msgs": [
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/initia.mstaking.v1.StakeAuthorization",
+                "max_tokens": [],
+                "allow_list": {
+                  "address": [
+                    "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                    "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                    "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                    "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                    "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                    "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                    "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
+                    "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                    "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                    "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                    "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                    "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                    "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
+                    "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_DELEGATE"
+              },
+              "expiration": null
+            }
           },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
-        "grant": {
-          "authorization": {
-            "@type": "/initia.mstaking.v1.StakeAuthorization",
-            "max_tokens": [],
-            "allow_list": {
-              "address": [
-                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
-                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
-                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
-                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
-                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
-                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
-                "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
-                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
-                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
-                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
-                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
-                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
-                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
-                "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
-              ]
-            },
-            "authorization_type": "AUTHORIZATION_TYPE_UNDELEGATE"
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/initia.mstaking.v1.StakeAuthorization",
+                "max_tokens": [],
+                "allow_list": {
+                  "address": [
+                    "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                    "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                    "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                    "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                    "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                    "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                    "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
+                    "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                    "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                    "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                    "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                    "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                    "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
+                    "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_UNDELEGATE"
+              },
+              "expiration": null
+            }
           },
-          "expiration": null
-        }
-      },
-      {
-        "@type": "/cosmos.authz.v1beta1.MsgGrant",
-        "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
-        "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
-        "grant": {
-          "authorization": {
-            "@type": "/initia.mstaking.v1.StakeAuthorization",
-            "max_tokens": [],
-            "allow_list": {
-              "address": [
-                "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
-                "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
-                "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
-                "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
-                "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
-                "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
-                "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
-                "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
-                "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
-                "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
-                "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
-                "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
-                "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
-                "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
-              ]
-            },
-            "authorization_type": "AUTHORIZATION_TYPE_REDELEGATE"
-          },
-          "expiration": null
-        }
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/initia.mstaking.v1.StakeAuthorization",
+                "max_tokens": [],
+                "allow_list": {
+                  "address": [
+                    "initvaloper1qvmhe73us6z3h72j06d0sqsxqxt5pa6ak2aczx",
+                    "initvaloper1mfg2ssl4m0tgf7dctl6uddeg0xmwg6a3506kds",
+                    "initvaloper1r20z6zmlnqrea5p9cendrgeke35nxzfueqwaz6",
+                    "initvaloper1ys57ctjrh90q7xzv6xxgrt2wm233899phmw220",
+                    "initvaloper1y89ehx5z3ycyzc402sadnfevwg057vtjxxg8sq",
+                    "initvaloper1cd84m26zhhpmrmcsnkregf694dpfteuf3h3e9q",
+                    "initvaloper1w79j6n45cth44ucvt6m5hycy6dzwetxclt3hl4",
+                    "initvaloper16g8fwcw29twkyysxs5328gccg9jhau66zpmpt3",
+                    "initvaloper1df23j8qq0ywn25w7rctdzen0r4c7u4pgwmdxmy",
+                    "initvaloper1cmlx2pqfgt2kpshe2fmc40epzvg699eqv3ax66",
+                    "initvaloper19pfxxechkzye2a3rujg62mu6ymz3n55zd89jq8",
+                    "initvaloper19uzc087w778p0l333w52ju0dgsajcj6ydep4rm",
+                    "initvaloper14yeq3lkajldaggj28hmq8xng9xux7x5gjxvj5z",
+                    "initvaloper15a07mcvjzrgtlf8mpp05r3avy9jvvgu2gucxxf"
+                  ]
+                },
+                "authorization_type": "AUTHORIZATION_TYPE_REDELEGATE"
+              },
+              "expiration": null
+            }
+          }
+        ]
       }
     ]
   },
