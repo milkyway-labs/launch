@@ -41,7 +41,7 @@ the rewards collector.
 
    Use these commands to sign the
    [transaction for the staker](./staker_controller_unsigned_tx.json) and the
-   [tranbsaction for the rewards collector](./rewards_collector_unsigned_tx.json):
+   [transaction for the rewards collector](./rewards_collector_unsigned_tx.json):
 
    ```shell
    celestia-appd tx sign staker_controller_unsigned_tx.json \
