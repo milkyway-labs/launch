@@ -8,12 +8,12 @@ In this step, operators are required to sign signatures to setup the preparation
 
 The following multisig accounts are generated from [the previous process](../multisig/README.md).
 
-| Name                | Address |
-| ------------------- | ------- |
-| `Staker`            | `...`   |
-| `Staker Controller` | `...`   |
-| `Rewards Collector` | `...`   |
-| `Grantee`           | `...`   |
+| Name                | Address                                      |
+| ------------------- | -------------------------------------------- |
+| `Staker`            | `bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn` |
+| `Staker Controller` | `bbn1644m5hs8c0e6cv00n3tg3y2mv2vjykgnrdzdek` |
+| `Rewards Collector` | `bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82` |
+| `Grantee`           | `bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg` |
 
 ### Signing signatures
 
@@ -45,12 +45,12 @@ Connect your ledger to your device and sign it.
 babylond keys add op-staker --ledger --index 0
 
 # We use the following public RPC endpoint to get account number.
-NODE="https://..." # TODO: need to determine
-STAKER_ADDR="..." # TODO: need to determine
+NODE="https://babylon.nodes.guru/rpc"
+STAKER_ADDR="bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn"
 
 # Sign the unsigned transaction and print the signature.
 babylond tx sign staker_tx.json \
---chain-id ... \ # TODO: need to determine
+--chain-id bbn-1 \
 --from op-staker \
 --multisig $STAKER_ADDR \
 --ledger \
@@ -71,12 +71,12 @@ Again, connect your ledger to your device and sign it.
 babylond keys add op-rewards-collector --ledger --index 2
 
 # We use the following public RPC endpoint to get account number.
-NODE="https://..." # TODO: need to determine
-REWARDS_COLLECTOR_ADDR="..." # TODO: need to determine
+NODE="https://babylon.nodes.guru/rpc"
+REWARDS_COLLECTOR_ADDR="bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82"
 
 # Sign the unsigned transaction
 babylond tx sign rewards_collector_tx.json \
---chain-id ... \ # TODO: need to determine
+--chain-id bbn-1 \
 --from op-rewards-collector \
 --multisig $REWARDS_COLLECTOR_ADDR \
 --ledger \

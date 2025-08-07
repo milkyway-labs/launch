@@ -1,0 +1,51 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1n2t5r8smc3gzqqq3v3cpdc7zn4xay05dd842nn",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/ibc.applications.transfer.v1.TransferAuthorization",
+            "allocations": [
+              {
+                "source_port": "transfer",
+                "source_channel": "channel-4",
+                "spend_limit": [
+                  {
+                    "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                    "denom": "ubbn"
+                  }
+                ],
+                "allow_list": [
+                  "milk1qg5ega6dykkxc307y25pecuufrjkxkaggkkxh7nad0vhyhtuhw3ssgcye4"
+                ],
+                "allowed_packet_data": [
+                  "*"
+                ]
+              }
+            ]
+          },
+          "expiration": null
+        }
+      }
+    ]
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "ubbn",
+          "amount": "15000"
+        }
+      ],
+      "gas_limit": 1000000,
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}

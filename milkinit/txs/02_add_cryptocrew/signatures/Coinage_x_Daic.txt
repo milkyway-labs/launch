@@ -1,0 +1,1 @@
+{"signatures":[{"public_key":{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A5vdfLNIhAAlSL234o6EjwAwBrUdMIKeD03JIu3u0DKa"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"6ah/ZM/pcvq86bPgt21ewEX6Up92MHUtxh+q8zvQm7EVps0YIhhPf2a+n8//Gb36LnQxnj844ViOvxLmVQ/iZhw="}},"sequence":"1"}]}
