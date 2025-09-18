@@ -1,0 +1,3 @@
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AvfyTXAxfXGHgs4oGFdNJYk+FZYzEgI2O9CDKZk9oiH6"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"8N7l83IPjyCLbl8TWZaAknVMwxl4oA8ZFmgIusDg7rl81PGz9W7BXw/CyCgu6wjOjprtgE7g8rI+POFR/2uYsQ=="}},"sequence":"2"}]}
+
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A5RORiziy/FSAiNZJdROcaqZWKVji/auWQQkI9LdsAYj"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"laAx18qTg0ki+a5VDW5t8oz2ha7t+Tm4pX6BkfNjhIMT/t/1cJ1W+GNXCSDYUcSW0W8u5miRq9iD6TIo5fz5+A=="}},"sequence":"1"}]}

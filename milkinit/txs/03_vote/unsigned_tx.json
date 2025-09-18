@@ -1,0 +1,52 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgExec",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "msgs": [
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+                "msg": "/cosmos.gov.v1.MsgVote"
+              },
+              "expiration": null
+            }
+          },
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+                "msg": "/cosmos.gov.v1.MsgVoteWeighted"
+              },
+              "expiration": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uinit",
+          "amount": "7500"
+        }
+      ],
+      "gas_limit": 500000,
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}
