@@ -1,0 +1,128 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgExec",
+        "grantee": "init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0",
+        "msgs": [
+          {
+            "@type": "/cosmos.authz.v1beta1.MsgGrant",
+            "granter": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+            "grantee": "init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt",
+            "grant": {
+              "authorization": {
+                "@type": "/initia.move.v1.ExecuteAuthorization",
+                "items": [
+                  {
+                    "function_names": [
+                      "vote",
+                      "vote_with_amount"
+                    ],
+                    "module_address": "0x3a886b32a802582f2e446e74d4a24d1d7ed01adf46d2a8f65c5723887e708789",
+                    "module_name": "weight_vote"
+                  }
+                ]
+              },
+              "expiration": null
+            }
+          }
+        ]
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "AxliJD9rSZHQP2z2+H3gOHsWAZXFZAP++18rbSzr11P1"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "Av98iyLOQhaJS8Zi11c6tQQ2d0dHwZjkD9KUETXrgdKN"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A5vdfLNIhAAlSL234o6EjwAwBrUdMIKeD03JIu3u0DKa"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "AsyU0pO3dqZ+58XMlid2yeaZWyt1zG/fUzVw2zS7d8Jx"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "AgLmjeWoCNWF9k293PQd03LtEkmVK+jMDrs1LylKoCs8"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A/1RaxFo2Hr6DFOxTh0lekU3aGN6T9T3ybj7iS6wMHHQ"
+            },
+            {
+              "@type": "/initia.crypto.v1beta1.ethsecp256k1.PubKey",
+              "key": "A+kudBBUM51bSOHions37Y7Gx6+CWL8I1vVtuAFNKRTS"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "zg=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "2"
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uinit",
+          "amount": "7500"
+        }
+      ],
+      "gas_limit": "500000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "CkFiogSbXyAFEiyeaggA9yDq3ZE2QREv09m8ciciPaEiFD88oyEwfbXK39tJ463ka6VbM5UIGADDvfJtuhrTA4A1GwpBBGCqQxbb15H9i1melmjTylZtNjzIMCrf/YLndx2TfHIYxGXJYTPo4nKptlmoxXqHTx//EeOwoHgMB8tMpg3LPhwKQZ1UasumJardo+9AORyKQAH4mesn2qojI+lpGDP9eZibeeVz3UWGbXhqTSRu5PbHdWdkqfRp88rlUK/d4RIVIZkcCkGVkkcqNjPCPEwnPiugCUKISazdU3tVH6mrdWppcC8atRd7zsB97V9T5v8DlaTo/oLW75HcAc2DUS3FbR8Vb7eLGwpBaC7ggGv1kuYcWVWr6TmWD+oJjk0CcaugrAdGtXIqoldcZdo2xbVjq+7FXNImDAVUeu1IXOQhhcFFQmL17n4/FBs="
+  ]
+}
