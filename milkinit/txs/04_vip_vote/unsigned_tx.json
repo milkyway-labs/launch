@@ -1,0 +1,33 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/initia.move.v1.MsgExecute",
+        "sender": "init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r",
+        "module_address": "0x1",
+        "module_name": "cosmos",
+        "function_name": "stargate",
+        "type_args": [],
+        "args": [
+          "kAN7IkB0eXBlIjoiL2Nvc21vcy5hdXRoei52MWJldGExLk1zZ0dyYW50IiwiZ3JhbnQiOnsiYXV0aG9yaXphdGlvbiI6eyJAdHlwZSI6Ii9pbml0aWEubW92ZS52MS5FeGVjdXRlQXV0aG9yaXphdGlvbiIsIml0ZW1zIjpbeyJmdW5jdGlvbl9uYW1lcyI6WyJ2b3RlIiwidm90ZV93aXRoX2Ftb3VudCJdLCJtb2R1bGVfYWRkcmVzcyI6IjB4M2E4ODZiMzJhODAyNTgyZjJlNDQ2ZTc0ZDRhMjRkMWQ3ZWQwMWFkZjQ2ZDJhOGY2NWM1NzIzODg3ZTcwODc4OSIsIm1vZHVsZV9uYW1lIjoid2VpZ2h0X3ZvdGUifV19fSwiZ3JhbnRlZSI6ImluaXQxcnZkNXRudDVkcGVnZWo0MjdzOHd5Z3Y4NWh5bnh2cWZreXlsbHQiLCJncmFudGVyIjoiaW5pdDFobGw5cmczd3BycTJleXE1M3hucmpmM2UzM2Q2cDVnOHM3NHQ1ciJ9"
+        ]
+      }
+    ]
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uinit",
+          "amount": "7500"
+        }
+      ],
+      "gas_limit": 500000,
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}
