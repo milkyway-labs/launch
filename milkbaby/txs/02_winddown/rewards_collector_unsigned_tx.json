@@ -1,0 +1,50 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.authz.v1beta1.MsgGrant"
+          },
+          "expiration": null
+        }
+      },
+      {
+        "@type": "/cosmos.authz.v1beta1.MsgGrant",
+        "granter": "bbn1d8ph9vlz5583jvsuyanls6yha0ltw2e5lv2s82",
+        "grantee": "bbn1p4ktw3y3ehjqzyrqjqjdcxukw2799ujq27mtrg",
+        "grant": {
+          "authorization": {
+            "@type": "/cosmos.authz.v1beta1.GenericAuthorization",
+            "msg": "/cosmos.bank.v1beta1.MsgSend"
+          },
+          "expiration": null
+        }
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [
+        {
+          "denom": "ubbn",
+          "amount": "600"
+        }
+      ],
+      "gas_limit": "300000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": []
+}
