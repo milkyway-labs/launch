@@ -8,28 +8,29 @@ coordinator so that we can do Initia VIP gauge voting.
 - Granter: `init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r` (the Staker multisig)
 - Grantee: `init1rvd5tnt5dpegej427s8wygv85hynxvqfkyyllt` (the Grantee account)
 - Module address: [`0x3a886b32a802582f2e446e74d4a24d1d7ed01adf46d2a8f65c5723887e708789`](https://docs.initia.xyz/resources/developer/deployed-contracts/initia)
+- Module name: `weight_vote`
 - Functions to allow: `vote`, `vote_with_amount`
 
 ## Instructions
 
-1. Register staker controller multisig.
+1. Register staker multisig.
 
-   > If you already have the staker controller multisig in the keyring, you can skip to the next step.
+   > If you already have the staker multisig in the keyring, you can skip to the next step.
 
-   Register the staker controller multisig with the following command:
+   Register the staker multisig with the following command:
 
    ```shell
-   initiad keys add staker-controller --pubkey '{"@type":"/cosmos.crypto.multisig.LegacyAminoPubKey","threshold":5,"public_keys":[{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AxliJD9rSZHQP2z2+H3gOHsWAZXFZAP++18rbSzr11P1"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Av98iyLOQhaJS8Zi11c6tQQ2d0dHwZjkD9KUETXrgdKN"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A5vdfLNIhAAlSL234o6EjwAwBrUdMIKeD03JIu3u0DKa"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AsyU0pO3dqZ+58XMlid2yeaZWyt1zG/fUzVw2zS7d8Jx"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AgLmjeWoCNWF9k293PQd03LtEkmVK+jMDrs1LylKoCs8"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A/1RaxFo2Hr6DFOxTh0lekU3aGN6T9T3ybj7iS6wMHHQ"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A+kudBBUM51bSOHions37Y7Gx6+CWL8I1vVtuAFNKRTS"}]}'
+   initiad keys add staker --pubkey '{"@type":"/cosmos.crypto.multisig.LegacyAminoPubKey","threshold":5,"public_keys":[{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Ap7AGas283Y/mDRuKPbRNfKDYUwp54Rv+ghwXWCZK+vp"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Ap3iS1vPzuqGbI3gHazfA9daepJ1Vk+Mx7k4qOmhqgOU"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A6J+/IYQxVY/642MVp9FY195bcbEGekVP//eKxoM0zCp"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"AqUp+pLK1doyrzODvqqtkkUBQADj/x1lnhLu1+jMNBW7"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Alpsypvj7nQAb9K/of05xIXdbTjk4Xs1IGnvabXKAi0Y"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"A5TPk+IFF9cl6Oal04Nr4tXGFXuvIeGadXPunZqfoXbS"},{"@type":"/initia.crypto.v1beta1.ethsecp256k1.PubKey","key":"Av/7+2RH4al8Q6vp70sIOt++bLh7gk3FoAnEZZ/Pr4WT"}]}'
    ```
 
 2. Import your key.
 
    > If you already have your key imported, you can skip to the next step.
 
-   Assuming you're using Ledger, use this command to import your operator key for the staker controller multisig:
+   Assuming you're using Ledger, use this command to import your operator key for the staker multisig:
 
    ```shell
-   initiad keys add op-staker-controller --ledger --index <index>
+   initiad keys add op-staker --ledger --index <index>
    ```
 
 3. Sign the transaction.
@@ -39,8 +40,8 @@ coordinator so that we can do Initia VIP gauge voting.
    ```shell
    initiad tx sign unsigned_tx.json \
      --chain-id interwoven-1 \
-     --from op-staker-controller \
-     --multisig init18ymfyqtgcg52z7te2ej7m6509fp3mhr2sm6yu0 \
+     --from op-staker \
+     --multisig init1hll9rg3wprq2eyq53xnrjf3e33d6p5g8s74t5r \
      --node https://rpc.initia.xyz \
      --sign-mode amino-json \
      --signature-only \

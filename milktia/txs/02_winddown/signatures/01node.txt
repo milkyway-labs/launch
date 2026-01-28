@@ -1,0 +1,5 @@
+# staker_controller_unsigned_tx.json
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AvfyTXAxfXGHgs4oGFdNJYk+FZYzEgI2O9CDKZk9oiH6"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"eCUJG/3vCymyxCmXMIemaj28YoMshLlFPCzQXiAccfZ2HftEMsWzGZkzQIlxIUnDYs2sFsgs2wMr3A+EieD90w=="}},"sequence":"3"}]}
+
+# rewards_collector_unsigned_tx.json
+{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A5RORiziy/FSAiNZJdROcaqZWKVji/auWQQkI9LdsAYj"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"2CO+B7Ur3c++12qjrntBHw3h0EzXSyM+ZpQHOlHOJq5hh1dqqK1WtzjgcnPf3Jikg8MdA4o9UBv3Ch40nHw9+w=="}},"sequence":"2"}]}
